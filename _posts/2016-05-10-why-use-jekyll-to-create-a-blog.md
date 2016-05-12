@@ -8,84 +8,53 @@ tags: Jekyll JobPrep
 * content
 {:toc}
 
-Jekyll is a static site generator. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn't require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. That assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming to avoid repeating our code in several places and update it easily.
-
-Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add. The benefits to this approach are that Jekyll is very fast, very secure and very cheap.
+Jekyll is a static site generator written in Ruby. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn't require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. The assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming<sup>1</sup> to easily and rapidly make changes to our application.
 
 
 
 
 
+###The Pros
 
-Now, I said anything that mostly doesn't require a database - because we can use plugins! When we picture dynamic content like comments, that might be essential to a blog, we often picture a database of some sort to store those comments in. While Jekyll is praised as having nothing you don't need, it might not have everything you desire. So  
+Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box<sup>2</sup>. Additionally, because it's so simple, it's fairly simple to optimize the code for speed and efficiency.
+
+If you need log-in, extensive commenting, photo hosting or hosting any type of data you should definitely move out of Jekyll and into a webapp framework that supports databases like Ruby on Rails, PHP, or Pythong to name a new.
+
+###The Cons
+
+I consider these inconveniences inherent in the type of framework Jekyll is, but with enough inconveniences, we've got a less preferable framework. 
+
+Photos and media have to be inserted manually. With some wites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn't have that, so if we've got a dozen photos per post, it might be a good idea to consider switching.
+
+SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don't use them. For me, this is more of a personal blog, and I don't think it would be an optimal use of my time to extensively go down the $$$ route.
+
+Jekyll only works on computers where you are "set-up". So if you've got a laptop you do most of your work on, and a light weight underpowered mini-laptop for traveling, you would likely find it difficult to update or edit your website on the road. 
+
+###The Competition
+
+######Wordpress
+Today, the biggest webapp framework is definitely Wordpress. A lot of folks knock it for it's resource use, but it's huge strength is in it's interface. Anyone can easily create a website on wordpress with virtually no programming knowledge. Additionally, the more difficult to do things like handling database log-ins and tarnsactions can be done with plugins. It's really easy to use and you can find a TON of sites that use Wordpress like The New York Times.
+
+Wordpress works out of a browser and it has a simple editing system, but it is slower. It's also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, we've also got a malware situation. Malware might get inserted into your site if you aren't constantly updating, and then you might run into anti-viruses not loading your site, loss of users trust and possibly SEO de-optimization.
 
 
+######Alternative Popular Static Site Generators
 
-, before it is put on the web. What's put on the web is 
+Middleman - Also built in Ruby, but smaller than Jekyll. Some major websites use Middleman and if it works for them it can work for us.
 
-, r is specialized for what it does.
+Roots - Node.js based, built by Carrot which is a subsidiary of the Vice Media Group. I 
 
-I chose Jekyll because speed, security and price were very important to me. These aren't the only important factors when writing a blog though, and Jekyll competes with WordPress, which is much more popular.
+Hugo - Written in GO. I've been hearing a lot of love for Hugo, but it might be because it's the new kid on the block that folks are touting it's horn.
 
-Jekyll is written in Ruby and I have some Ruby experience, so that also 
+If you are having trouble choosing a Static Site Generator and don't don't have any coding experience I'd just pick Jekyll or Wordpress. They are the big kids on the block, and it's more important that you get started so you can work through their fundamentals, than you spend time researching which is best. If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn't have any trouble finding tutorials to get you started.
 
-the right resource for me to host a static application. 
+######Footnotes:
 
-Jekyll was written in Ruby; I have some Ruby experience. Jekyll is very fast, secure and 
+1. Paradigms include things like DRY - Don't repeat yourself. If you are repeating yourself over several sections, and you decide to make a change, you now have to make this change over several sections. This is both error prone (typos) and time consuming.
 
+2. Becuase we have no communication between databases we are fast. We are just pulling up our already prepared data quickly.
 
-y
+Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it's hosted, there isn't much to change. It's often the ability to be dynamic that presents security holes.
 
-Pros
+With no databse, Jekyll is small and light. That means cheap. It also means we aren't sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.
 
-Benefits of Jekyll
-
-Speed
-
-Static Pages
-
-Cheap
-
-Relatively Easy to Use
-Pretty Secure
-
-Cons
-Seo optimization
-http://philipm.at/2011/jekyll_vs_hyde.html
-
-wordpress
-My blog loading slowly.
-My blog crashing during peak periods.
-My blog becoming infected with malware.
-
-Optimizing a Jekyll blog, on the other hand, is easy, since you can:
-
-Host your entire blog on a server running nginx.
-Minify your HTML and CSS without using a server-side plugin.
-Avoid over-complicated caching plugins altogether.
-Regularly run all of your images through ImageOptim (which I’ve found a lot better than using the SmushIt! plugin).
-Have much more direct control over the design of your blog. (WordPress has good support for theming, but Jekyll is less fiddly to get started with.)
-
-Writing new content
-
-The second downside with running a site generated by Jekyll is that I’d be forced to write new content from home or anyway from a computer with both a copy of the code and the ‘tools’ required to rebuild and publish the updated site. With WordPress, I can write new content from anywhere. It’s nice to be able to fire up a browser in a cafe, or wherever, and edit new content when you have some good ideas.
-
-I have also changed my mind about the editor; at the time, for some reason I didn’t like much to write posts with WordPress’ built in editor; but with Jekyll, I eventually got tired of how I had to manually manage images, copy metadata from an existing post to a new post, then change that metadata, write the post, rebuild the site. It was a lot of work, really. With WordPress, the editing experience is so easy and I actually like the editor now while I am writing this post. And you can even use some apps to write content if you are not happy with the built in editor.
-
-SEO
-
-Another thing that with Jekyll you need to take care of entirely on your own is search engine optimisation, while WordPress and many themes available for it are well designed from a SEO point of view already out of the box -but still, there are also valid plugins that can help further improve the SEO performance of the site.
-
-Ecosystem
-
-WordPress’ ecosystem of themes and plugins is amazing, you really can find anything you need (although themes and plugins are often source of security concerns…as well). The same isn’t true for Jekyll. In most cases you don’t need to write any code, thanks to plugins but also thanks to many themes that automate a lot of stuff with great flexibility.
-
-Genesis and other frameworks
-
-For this site I am using the Genesis framework, and I have also used Thesis in the past. These premium themes are amazing and allow for quick customisation and changes to layouts and more, without having to write any code. With Jekyll, making changes to the layout or things like that mean making changes to the code and rebuilding the site, then deploying again.
-
-Other considerations
-
-With Jekyll I had a super fast, completely static website; it’s hard to beat that. However there are valid caching plugins which, if well configured, can help speed up WordPress quite a bit, so at the end of the day it is not a so big deal as it may appear. Security is another aspect that can be a well known problem with WordPress; however with some good sense and useful plugins and services (both free and paid), it is at least possible to harden WordPress against common attacks. Having said that, I have to admit that I would sleep better at night with a static site generated by Jekyll than with a PHP based CMS like WordPress. But hey, you can’t have everything -I hope I won’t be regretting these words :)
-
-At the end of the day, Jekyll is still a young project and I will surely keep an eye on it, but for now I am happy to be back on WordPress. Content is the most important thing, and whatever makes writing content easier gets my vote; at the moment, it is WordPress.
