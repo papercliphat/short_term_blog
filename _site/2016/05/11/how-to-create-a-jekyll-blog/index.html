@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>How to Create a Jekyll Blog</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is less of a How to, and more of a let me point you in the right direction. Then I'll throw in a couple pointers on how you can make an identical site t...">
 
 
     <link rel="stylesheet" href=" /css/fontawesome/css/font-awesome.min.css ">
@@ -105,11 +105,11 @@
         <!--a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a-->
         <a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a>&nbsp;
     
-        <!--a href="/tag/#JobPrep" title="Tag: JobPrep" rel="tag">JobPrep</a-->
-        <a href="/tag/#JobPrep" title="Tag: JobPrep" rel="tag">JobPrep</a>&nbsp;
-    
         <!--a href="/tag/#StaticApp" title="Tag: StaticApp" rel="tag">StaticApp</a-->
-        <a href="/tag/#StaticApp" title="Tag: StaticApp" rel="tag">StaticApp</a>
+        <a href="/tag/#StaticApp" title="Tag: StaticApp" rel="tag">StaticApp</a>&nbsp;
+    
+        <!--a href="/tag/#HowTo" title="Tag: HowTo" rel="tag">HowTo</a-->
+        <a href="/tag/#HowTo" title="Tag: HowTo" rel="tag">HowTo</a>
     
   
 
@@ -120,11 +120,79 @@
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        
+        <ul id="markdown-toc">
+  <li><a href="#install-ruby" id="markdown-toc-install-ruby">Install Ruby</a></li>
+  <li><a href="#install-jekyll" id="markdown-toc-install-jekyll">Install Jekyll</a></li>
+  <li><a href="#a-few-pointers" id="markdown-toc-a-few-pointers">A Few Pointers</a>    <ul>
+      <li><a href="#some-concise-theme-caveats" id="markdown-toc-some-concise-theme-caveats">Some Concise Theme Caveats</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>This is less of a How to, and more of a let me point you in the right direction. Then I'll throw in a couple pointers on how you can make an identical site to mine. It's going to be light on content, mosty full of links, but if you've never built anything in Jekyll it's helpful to have instructions on how to proceed.</p>
+
+<h4 id="install-ruby">Install Ruby</h4>
+
+<p>The first step to building a Jekyll Blog is to install Ruby!</p>
+
+<p>Ruby has a some decent instructions at the <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby official site</a>.</p>
+
+<p>I used RVM (Ruby Version Manager) to both manage and install Ruby. I've never actually needed to use a specific Ruby version, but it was the easiest way to install Ruby on my system. We can visit <a href="https://rvm.io/rvm/install">RVM’s official site</a> for detailed instructions.</p>
+
+<p>For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”</p>
+
+<h4 id="install-jekyll">Install Jekyll</h4>
+
+<p>Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the <a href="https://jekyllrb.com/">Jekyll official site</a> we can find all the info to get started.</p>
+
+<p>Once Ruby is installed it, it's just opening up the console and typing:</p>
+
+<blockquote>
+  <p>$gem install Jekyll</p>
+</blockquote>
+
+<p>The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it's a worthwhile read.</p>
+
+<h4 id="a-few-pointers">A Few Pointers</h4>
+
+<p>Out of the box Jekyll comes with a simple some HTML and CSS included. If you don't like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.</p>
+
+<p>I use a <a href="http://jekyllthemes.org/">Jekyll theme</a> from, which is pretty much just an aggregation site. I was a fan of both <a href="http://jekyllthemes.org/themes/yellowblue/">Yellow Blue</a> and <a href="http://jekyllthemes.org/themes/wiki-blog/">WikiBlog</a> . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to <a href="http://jekyllthemes.org/themes/cool-concise-high-end/">Concise-high-end Theme</a>. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included what I used in my <a href="https://github.com/papercliphat/concise_theme_jekyll">github</a> for English speakers.</p>
+
+<h5 id="some-concise-theme-caveats">Some Concise Theme Caveats</h5>
+
+<p>The tags feature requires at least two pages with different tags or it will through a divide by 0 error.</p>
+
+<p>To utilize the excerpt of the full blog page, keep 3 empty rows between the excerpt and the main body of the content.</p>
+
+<p>You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on <a href="https://jekyllrb.com/">Jekyll’s site</a></p>
+
+<p>Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.</p>
+
+<p>Gaohaoyang does have a request for linking that the theme was created by him in the footer. I think that’s asking a bit much for a Jekyll Theme. Additionally the general concensus is if it's out there for public use with an MIT license you can pretty much do what you want with it. Lastly, I'm modifying and building on his work like all programmers do. At some point we have to draw a line between our work and our predecessors.</p>
 
         </article>
         <hr>
         
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
         
             
             
@@ -196,11 +264,6 @@
         
             </ul>
         
-
-
-        <h2 id="comments">Comments</h2>
-        
-
 
 
 

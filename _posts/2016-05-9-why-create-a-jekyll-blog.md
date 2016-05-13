@@ -18,11 +18,15 @@ When I first started developing I didn\'t see the point in a blog. I pictured tu
 
 But I figured these were just some folks with years of experience; a blog is for someone in like their fifth year programming who wants to give back to the community. Why extend the extra effort now? Could I even put out anything decent? I mean I\'m still learning. There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?
 
+#### Professional
+
 When I started applying for software positions, I started seeing preferences towards individuals with personal websites aka blogs. Now at this point, I\'m like ok, I better figure out why this matters. Obviously your employer wants overachievers. They claim to want folks to eat breathe and sleep code. That\'s unrealistic... but a good employee is involved in their work. A great employee thinks about their field in their time off.
 
-Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We\'re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog... We\'re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that\'s how people become great in their field.
+Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We\'re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog... We\'re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that\'s how people become great in their field. That\'s really what an employer really wants.
 
-That\'s really what an employer really wants.
+Additionally if at some point your employer requests an article for their website or you decide to contribute something for publication, you already have a body of work to assist with the process.
+
+#### Good Measuring Stick
 
 Futhermore a technical blog demonstrates a certain level of technical competence. If we start early enough a techincal blog can be a measuring stick of skills. A sort of checkbox of abilities... only anyone can read about those abilities and gather a fair assessment of how good they really are. 
 

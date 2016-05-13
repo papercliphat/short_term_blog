@@ -5,13 +5,88 @@
     <description></description>
     <link>https://www.mikepotato.com/</link>
     <atom:link href="https://www.mikepotato.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 May 2016 00:10:54 -0700</pubDate>
-    <lastBuildDate>Wed, 11 May 2016 00:10:54 -0700</lastBuildDate>
+    <pubDate>Fri, 13 May 2016 04:05:19 -0700</pubDate>
+    <lastBuildDate>Fri, 13 May 2016 04:05:19 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
-        <title>How to Create a Jekyll Blog</title>
+        <title>Beginning Self-Instructed CS</title>
         <description>
+&lt;p&gt;Rationale Behind it&lt;/p&gt;
+
+&lt;p&gt;OpenCourseware&lt;/p&gt;
+
+&lt;p&gt;CS50&lt;/p&gt;
+
+&lt;p&gt;Algorithms&lt;/p&gt;
+
+&lt;p&gt;Tutorials&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/13/where-to-begin-with-self-instructed-cs/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/13/where-to-begin-with-self-instructed-cs/</guid>
+        
+        <category>ComputerScience</category>
+        
+        <category>Self-Instruction</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>How to Create a Jekyll Blog</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#install-ruby&quot; id=&quot;markdown-toc-install-ruby&quot;&gt;Install Ruby&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#install-jekyll&quot; id=&quot;markdown-toc-install-jekyll&quot;&gt;Install Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-few-pointers&quot; id=&quot;markdown-toc-a-few-pointers&quot;&gt;A Few Pointers&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#some-concise-theme-caveats&quot; id=&quot;markdown-toc-some-concise-theme-caveats&quot;&gt;Some Concise Theme Caveats&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is less of a How to, and more of a let me point you in the right direction. Then I&#39;ll throw in a couple pointers on how you can make an identical site to mine. It&#39;s going to be light on content, mosty full of links, but if you&#39;ve never built anything in Jekyll it&#39;s helpful to have instructions on how to proceed.&lt;/p&gt;
+
+&lt;h4 id=&quot;install-ruby&quot;&gt;Install Ruby&lt;/h4&gt;
+
+&lt;p&gt;The first step to building a Jekyll Blog is to install Ruby!&lt;/p&gt;
+
+&lt;p&gt;Ruby has a some decent instructions at the &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby official site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I used RVM (Ruby Version Manager) to both manage and install Ruby. I&#39;ve never actually needed to use a specific Ruby version, but it was the easiest way to install Ruby on my system. We can visit &lt;a href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM’s official site&lt;/a&gt; for detailed instructions.&lt;/p&gt;
+
+&lt;p&gt;For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”&lt;/p&gt;
+
+&lt;h4 id=&quot;install-jekyll&quot;&gt;Install Jekyll&lt;/h4&gt;
+
+&lt;p&gt;Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll official site&lt;/a&gt; we can find all the info to get started.&lt;/p&gt;
+
+&lt;p&gt;Once Ruby is installed it, it&#39;s just opening up the console and typing:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$gem install Jekyll&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it&#39;s a worthwhile read.&lt;/p&gt;
+
+&lt;h4 id=&quot;a-few-pointers&quot;&gt;A Few Pointers&lt;/h4&gt;
+
+&lt;p&gt;Out of the box Jekyll comes with a simple some HTML and CSS included. If you don&#39;t like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.&lt;/p&gt;
+
+&lt;p&gt;I use a &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt; from, which is pretty much just an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt; . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;http://jekyllthemes.org/themes/cool-concise-high-end/&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included what I used in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers.&lt;/p&gt;
+
+&lt;h5 id=&quot;some-concise-theme-caveats&quot;&gt;Some Concise Theme Caveats&lt;/h5&gt;
+
+&lt;p&gt;The tags feature requires at least two pages with different tags or it will through a divide by 0 error.&lt;/p&gt;
+
+&lt;p&gt;To utilize the excerpt of the full blog page, keep 3 empty rows between the excerpt and the main body of the content.&lt;/p&gt;
+
+&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll’s site&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.&lt;/p&gt;
+
+&lt;p&gt;Gaohaoyang does have a request for linking that the theme was created by him in the footer. I think that’s asking a bit much for a Jekyll Theme. Additionally the general concensus is if it&#39;s out there for public use with an MIT license you can pretty much do what you want with it. Lastly, I&#39;m modifying and building on his work like all programmers do. At some point we have to draw a line between our work and our predecessors.&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 May 2016 00:00:00 -0700</pubDate>
         <link>https://www.mikepotato.com/2016/05/11/how-to-create-a-jekyll-blog/</link>
@@ -19,7 +94,82 @@
         
         <category>Jekyll</category>
         
-        <category>JobPrep</category>
+        <category>StaticApp</category>
+        
+        <category>HowTo</category>
+        
+        
+        <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Benefits of Jekyll in Static Apps</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-pros&quot; id=&quot;markdown-toc-the-pros&quot;&gt;The Pros&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-cons&quot; id=&quot;markdown-toc-the-cons&quot;&gt;The Cons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-competition&quot; id=&quot;markdown-toc-the-competition&quot;&gt;The Competition&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#wordpress&quot; id=&quot;markdown-toc-wordpress&quot;&gt;Wordpress&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#alternative-popular-static-site-generators&quot; id=&quot;markdown-toc-alternative-popular-static-site-generators&quot;&gt;Alternative Popular Static Site Generators&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#footnotes&quot; id=&quot;markdown-toc-footnotes&quot;&gt;Footnotes:&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Jekyll is a static site generator written in Ruby. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn&#39;t require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. The assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming&lt;sup&gt;1&lt;/sup&gt; to easily and rapidly make changes to our application.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-pros&quot;&gt;The Pros&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box&lt;sup&gt;2&lt;/sup&gt;. Additionally, because it&#39;s so simple, it&#39;s fairly simple to optimize the code for speed and efficiency.&lt;/p&gt;
+
+&lt;p&gt;If you need log-in, extensive commenting, photo hosting or hosting any type of data you should definitely move out of Jekyll and into a webapp framework that supports databases like Ruby on Rails, PHP, or Pythong to name a new.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-cons&quot;&gt;The Cons&lt;/h3&gt;
+
+&lt;p&gt;I consider these inconveniences inherent in the type of framework Jekyll is, but with enough inconveniences, we&#39;ve got a less preferable framework.&lt;/p&gt;
+
+&lt;p&gt;Photos and media have to be inserted manually. With some wites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn&#39;t have that, so if we&#39;ve got a dozen photos per post, it might be a good idea to consider switching.&lt;/p&gt;
+
+&lt;p&gt;SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don&#39;t use them. For me, this is more of a personal blog, and I don&#39;t think it would be an optimal use of my time to extensively go down the $$$ route.&lt;/p&gt;
+
+&lt;p&gt;Jekyll only works on computers where you are “set-up”. So if you&#39;ve got a laptop you do most of your work on, and a light weight underpowered mini-laptop for traveling, you would likely find it difficult to update or edit your website on the road.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-competition&quot;&gt;The Competition&lt;/h3&gt;
+
+&lt;h4 id=&quot;wordpress&quot;&gt;Wordpress&lt;/h4&gt;
+&lt;p&gt;Today, the biggest webapp framework is definitely Wordpress. A lot of folks knock it for it&#39;s resource use, but it&#39;s huge strength is in it&#39;s interface. Anyone can easily create a website on wordpress with virtually no programming knowledge. Additionally, the more difficult to do things like handling database log-ins and tarnsactions can be done with plugins. It&#39;s really easy to use and you can find a TON of sites that use Wordpress like The New York Times.&lt;/p&gt;
+
+&lt;p&gt;Wordpress works out of a browser and it has a simple editing system, but it is slower. It&#39;s also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, we&#39;ve also got a malware situation. Malware might get inserted into your site if you aren&#39;t constantly updating, and then you might run into anti-viruses not loading your site, loss of users trust and possibly SEO de-optimization.&lt;/p&gt;
+
+&lt;h4 id=&quot;alternative-popular-static-site-generators&quot;&gt;Alternative Popular Static Site Generators&lt;/h4&gt;
+
+&lt;p&gt;Middleman - Also built in Ruby, but smaller than Jekyll. Some major websites use Middleman and if it works for them it can work for us.&lt;/p&gt;
+
+&lt;p&gt;Roots - Node.js based, built by Carrot which is a subsidiary of the Vice Media Group. I&lt;/p&gt;
+
+&lt;p&gt;Hugo - Written in GO. I&#39;ve been hearing a lot of love for Hugo, but it might be because it&#39;s the new kid on the block that folks are touting it&#39;s horn.&lt;/p&gt;
+
+&lt;p&gt;If you are having trouble choosing a Static Site Generator and don&#39;t don&#39;t have any coding experience I&#39;d just pick Jekyll or Wordpress. They are the big kids on the block, and it&#39;s more important that you get started so you can work through their fundamentals, than you spend time researching which is best. If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn&#39;t have any trouble finding tutorials to get you started.&lt;/p&gt;
+
+&lt;h5 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Paradigms include things like DRY - Don&#39;t repeat yourself. If you are repeating yourself over several sections, and you decide to make a change, you now have to make this change over several sections. This is both error prone (typos) and time consuming.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Becuase we have no communication between databases we are fast. We are just pulling up our already prepared data quickly. Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it&#39;s hosted, there isn&#39;t much to change. It&#39;s often the ability to be dynamic that presents security holes. With no databse, Jekyll is small and light. That means cheap. It also means we aren&#39;t sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</guid>
+        
+        <category>Jekyll</category>
         
         <category>StaticApp</category>
         
@@ -29,109 +179,27 @@
       </item>
     
       <item>
-        <title>Benefits of Jekyll in Static Apps</title>
-        <description>
-&lt;p&gt;Jekyll is a static site generator. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn’t require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. That assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming to avoid repeating our code in several places and update it easily.&lt;/p&gt;
-
-&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add. The benefits to this approach are that Jekyll is very fast, very secure and very cheap.&lt;/p&gt;
-
-&lt;p&gt;Now, I said anything that mostly doesn’t require a database - because we can use plugins! When we picture dynamic content like comments, that might be essential to a blog, we often picture a database of some sort to store those comments in. While Jekyll is praised as having nothing you don’t need, it might not have everything you desire. So&lt;/p&gt;
-
-&lt;p&gt;, before it is put on the web. What’s put on the web is&lt;/p&gt;
-
-&lt;p&gt;, r is specialized for what it does.&lt;/p&gt;
-
-&lt;p&gt;I chose Jekyll because speed, security and price were very important to me. These aren’t the only important factors when writing a blog though, and Jekyll competes with WordPress, which is much more popular.&lt;/p&gt;
-
-&lt;p&gt;Jekyll is written in Ruby and I have some Ruby experience, so that also&lt;/p&gt;
-
-&lt;p&gt;the right resource for me to host a static application.&lt;/p&gt;
-
-&lt;p&gt;Jekyll was written in Ruby; I have some Ruby experience. Jekyll is very fast, secure and&lt;/p&gt;
-
-&lt;p&gt;y&lt;/p&gt;
-
-&lt;p&gt;Pros&lt;/p&gt;
-
-&lt;p&gt;Benefits of Jekyll&lt;/p&gt;
-
-&lt;p&gt;Speed&lt;/p&gt;
-
-&lt;p&gt;Static Pages&lt;/p&gt;
-
-&lt;p&gt;Cheap&lt;/p&gt;
-
-&lt;p&gt;Relatively Easy to Use
-Pretty Secure&lt;/p&gt;
-
-&lt;p&gt;Cons
-Seo optimization
-http://philipm.at/2011/jekyll_vs_hyde.html&lt;/p&gt;
-
-&lt;p&gt;wordpress
-My blog loading slowly.
-My blog crashing during peak periods.
-My blog becoming infected with malware.&lt;/p&gt;
-
-&lt;p&gt;Optimizing a Jekyll blog, on the other hand, is easy, since you can:&lt;/p&gt;
-
-&lt;p&gt;Host your entire blog on a server running nginx.
-Minify your HTML and CSS without using a server-side plugin.
-Avoid over-complicated caching plugins altogether.
-Regularly run all of your images through ImageOptim (which I’ve found a lot better than using the SmushIt! plugin).
-Have much more direct control over the design of your blog. (WordPress has good support for theming, but Jekyll is less fiddly to get started with.)&lt;/p&gt;
-
-&lt;p&gt;Writing new content&lt;/p&gt;
-
-&lt;p&gt;The second downside with running a site generated by Jekyll is that I’d be forced to write new content from home or anyway from a computer with both a copy of the code and the ‘tools’ required to rebuild and publish the updated site. With WordPress, I can write new content from anywhere. It’s nice to be able to fire up a browser in a cafe, or wherever, and edit new content when you have some good ideas.&lt;/p&gt;
-
-&lt;p&gt;I have also changed my mind about the editor; at the time, for some reason I didn’t like much to write posts with WordPress’ built in editor; but with Jekyll, I eventually got tired of how I had to manually manage images, copy metadata from an existing post to a new post, then change that metadata, write the post, rebuild the site. It was a lot of work, really. With WordPress, the editing experience is so easy and I actually like the editor now while I am writing this post. And you can even use some apps to write content if you are not happy with the built in editor.&lt;/p&gt;
-
-&lt;p&gt;SEO&lt;/p&gt;
-
-&lt;p&gt;Another thing that with Jekyll you need to take care of entirely on your own is search engine optimisation, while WordPress and many themes available for it are well designed from a SEO point of view already out of the box -but still, there are also valid plugins that can help further improve the SEO performance of the site.&lt;/p&gt;
-
-&lt;p&gt;Ecosystem&lt;/p&gt;
-
-&lt;p&gt;WordPress’ ecosystem of themes and plugins is amazing, you really can find anything you need (although themes and plugins are often source of security concerns…as well). The same isn’t true for Jekyll. In most cases you don’t need to write any code, thanks to plugins but also thanks to many themes that automate a lot of stuff with great flexibility.&lt;/p&gt;
-
-&lt;p&gt;Genesis and other frameworks&lt;/p&gt;
-
-&lt;p&gt;For this site I am using the Genesis framework, and I have also used Thesis in the past. These premium themes are amazing and allow for quick customisation and changes to layouts and more, without having to write any code. With Jekyll, making changes to the layout or things like that mean making changes to the code and rebuilding the site, then deploying again.&lt;/p&gt;
-
-&lt;p&gt;Other considerations&lt;/p&gt;
-
-&lt;p&gt;With Jekyll I had a super fast, completely static website; it’s hard to beat that. However there are valid caching plugins which, if well configured, can help speed up WordPress quite a bit, so at the end of the day it is not a so big deal as it may appear. Security is another aspect that can be a well known problem with WordPress; however with some good sense and useful plugins and services (both free and paid), it is at least possible to harden WordPress against common attacks. Having said that, I have to admit that I would sleep better at night with a static site generated by Jekyll than with a PHP based CMS like WordPress. But hey, you can’t have everything -I hope I won’t be regretting these words :)&lt;/p&gt;
-
-&lt;p&gt;At the end of the day, Jekyll is still a young project and I will surely keep an eye on it, but for now I am happy to be back on WordPress. Content is the most important thing, and whatever makes writing content easier gets my vote; at the moment, it is WordPress.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</guid>
-        
-        <category>Jekyll</category>
-        
-        <category>JobPrep</category>
-        
-        
-        <category>Blog</category>
-        
-      </item>
-    
-      <item>
         <title>Why Create a Jekyll Blog</title>
-        <description>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#professional&quot; id=&quot;markdown-toc-professional&quot;&gt;Professional&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#good-measuring-stick&quot; id=&quot;markdown-toc-good-measuring-stick&quot;&gt;Good Measuring Stick&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;When I first started developing I didn&#39;t see the point in a blog. I pictured tumblr blogs full of food and selfies. That&#39;s not a fair assessment of blogs, and was particularly unfair to technical blogs. As I started learning and googling problems/techniques I found I often ran into blogs for potential solutions and thought pieces on problems. They weren&#39;t a direct guide, or all encompassing, but they were almost always a great starting point.&lt;/p&gt;
 
 &lt;p&gt;But I figured these were just some folks with years of experience; a blog is for someone in like their fifth year programming who wants to give back to the community. Why extend the extra effort now? Could I even put out anything decent? I mean I&#39;m still learning. There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?&lt;/p&gt;
 
+&lt;h4 id=&quot;professional&quot;&gt;Professional&lt;/h4&gt;
+
 &lt;p&gt;When I started applying for software positions, I started seeing preferences towards individuals with personal websites aka blogs. Now at this point, I&#39;m like ok, I better figure out why this matters. Obviously your employer wants overachievers. They claim to want folks to eat breathe and sleep code. That&#39;s unrealistic… but a good employee is involved in their work. A great employee thinks about their field in their time off.&lt;/p&gt;
 
-&lt;p&gt;Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We&#39;re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog… We&#39;re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that&#39;s how people become great in their field.&lt;/p&gt;
+&lt;p&gt;Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We&#39;re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog… We&#39;re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that&#39;s how people become great in their field. That&#39;s really what an employer really wants.&lt;/p&gt;
 
-&lt;p&gt;That&#39;s really what an employer really wants.&lt;/p&gt;
+&lt;p&gt;Additionally if at some point your employer requests an article for their website or you decide to contribute something for publication, you already have a body of work to assist with the process.&lt;/p&gt;
+
+&lt;h4 id=&quot;good-measuring-stick&quot;&gt;Good Measuring Stick&lt;/h4&gt;
 
 &lt;p&gt;Futhermore a technical blog demonstrates a certain level of technical competence. If we start early enough a techincal blog can be a measuring stick of skills. A sort of checkbox of abilities… only anyone can read about those abilities and gather a fair assessment of how good they really are.&lt;/p&gt;
 
