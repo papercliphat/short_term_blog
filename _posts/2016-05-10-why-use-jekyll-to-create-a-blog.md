@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Benefits of Jekyll in Static Apps
-category: Blog
+category: Jekyll
 tags: Jekyll StaticApp
 ---
 

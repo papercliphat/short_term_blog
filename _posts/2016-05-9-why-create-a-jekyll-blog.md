@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Create a Jekyll Blog
-category: Blog
+category: Jekyll
 tags: Jekyll JobPrep StaticApp
 ---
 

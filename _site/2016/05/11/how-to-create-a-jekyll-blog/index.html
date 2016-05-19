@@ -28,14 +28,6 @@
         <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
         <nav id="headerNav">
             <ul>
-                <li>
-                    
-                    <a href="/">
-                    
-                        <i class="fa fa-home"></i>
-                    </a>
-                </li>
-
                 
                     
                     <li>
@@ -85,7 +77,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#Blog" title="Category: Blog" rel="category">Blog</a>
+        <a href="/category/#Jekyll" title="Category: Jekyll" rel="category">Jekyll</a>
     
   
 
@@ -124,7 +116,7 @@
   <li><a href="#install-ruby" id="markdown-toc-install-ruby">Install Ruby</a></li>
   <li><a href="#install-jekyll" id="markdown-toc-install-jekyll">Install Jekyll</a></li>
   <li><a href="#a-few-pointers" id="markdown-toc-a-few-pointers">A Few Pointers</a>    <ul>
-      <li><a href="#some-concise-theme-caveats" id="markdown-toc-some-concise-theme-caveats">Some Concise Theme Caveats</a></li>
+      <li><a href="#caveats" id="markdown-toc-caveats">Caveats</a></li>
     </ul>
   </li>
 </ul>
@@ -157,25 +149,31 @@
 
 <p>Out of the box Jekyll comes with a simple some HTML and CSS included. If you don't like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.</p>
 
-<p>I use a <a href="http://jekyllthemes.org/">Jekyll theme</a> from, which is pretty much just an aggregation site. I was a fan of both <a href="http://jekyllthemes.org/themes/yellowblue/">Yellow Blue</a> and <a href="http://jekyllthemes.org/themes/wiki-blog/">WikiBlog</a> . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to <a href="http://jekyllthemes.org/themes/cool-concise-high-end/">Concise-high-end Theme</a>. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included what I used in my <a href="https://github.com/papercliphat/concise_theme_jekyll">github</a> for English speakers.</p>
+<p>I use a <a href="http://jekyllthemes.org/">Jekyll theme</a> from, which is pretty much just an aggregation site. I was a fan of both <a href="http://jekyllthemes.org/themes/yellowblue/">Yellow Blue</a> and <a href="http://jekyllthemes.org/themes/wiki-blog/">WikiBlog</a> . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">Concise-high-end Theme</a>. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my <a href="https://github.com/papercliphat/concise_theme_jekyll">github</a> for English speakers.</p>
 
-<h5 id="some-concise-theme-caveats">Some Concise Theme Caveats</h5>
+<h5 id="caveats">Caveats</h5>
 
-<p>The tags feature requires at least two pages with different tags or it will through a divide by 0 error.</p>
+<p>The Concise theme “tag” feature requires at least two pages with different tags or you will get a divide by 0 error.</p>
 
-<p>To utilize the excerpt of the full blog page, keep 3 empty rows between the excerpt and the main body of the content.</p>
+<p>To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.</p>
 
-<p>You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on <a href="https://jekyllrb.com/">Jekyll’s site</a></p>
+<p>You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the <a href="https://jekyllrb.com/">Jekyll site</a></p>
 
 <p>Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.</p>
-
-<p>Gaohaoyang does have a request for linking that the theme was created by him in the footer. I think that’s asking a bit much for a Jekyll Theme. Additionally the general concensus is if it's out there for public use with an MIT license you can pretty much do what you want with it. Lastly, I'm modifying and building on his work like all programmers do. At some point we have to draw a line between our work and our predecessors.</p>
 
         </article>
         <hr>
         
         
             
+            
+                
+                    
+                
+                    
+                
+                    
+                
             
                 
                     
@@ -280,7 +278,6 @@
                 </div>
                 <ul id="content-side" class="content-ul">
                     <li><a href="#similar_posts">Similar Posts</a></li>
-                    <li><a href="#comments">Comments</a></li>
                 </ul>
             </div>
 

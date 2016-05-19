@@ -5,33 +5,69 @@
     <description></description>
     <link>https://www.mikepotato.com/</link>
     <atom:link href="https://www.mikepotato.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 May 2016 04:05:19 -0700</pubDate>
-    <lastBuildDate>Fri, 13 May 2016 04:05:19 -0700</lastBuildDate>
+    <pubDate>Thu, 19 May 2016 05:59:39 -0700</pubDate>
+    <lastBuildDate>Thu, 19 May 2016 05:59:39 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>Beginning Self-Instructed CS</title>
-        <description>
-&lt;p&gt;Rationale Behind it&lt;/p&gt;
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-you-need&quot; id=&quot;markdown-toc-what-you-need&quot;&gt;What You Need&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gettin-gstarted&quot; id=&quot;markdown-toc-gettin-gstarted&quot;&gt;Gettin gStarted&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cs50-at-harvard&quot; id=&quot;markdown-toc-cs50-at-harvard&quot;&gt;CS50 at Harvard.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-sampling&quot; id=&quot;markdown-toc-a-sampling&quot;&gt;A Sampling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#algorithms&quot; id=&quot;markdown-toc-algorithms&quot;&gt;Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;OpenCourseware&lt;/p&gt;
+&lt;p&gt;Teaching yourself how to code is not really that hard. It takes a good deal of effort, focus and time, but if you’ve got those resources, you can get it done! There are plenty of skilled computer programmers from the 80’s to today who didn’t go to college and are self educated. As I’ve read, most of these folks had other cards up their sleves, like working with computer code since middle or high school. A lot of them just didn’t have an interest in college. For the most part, they had some serious resources, but today, those resources are more widely availabe.&lt;/p&gt;
 
-&lt;p&gt;CS50&lt;/p&gt;
+&lt;h4 id=&quot;what-you-need&quot;&gt;What You Need&lt;/h4&gt;
 
-&lt;p&gt;Algorithms&lt;/p&gt;
+&lt;p&gt;A half decent computer. Today, for about $400 USD, you can get a programming laptop. It won’t be the fast, and you might get frustrated with it, but it will have the tools you need. That’s a lot more than these other folks who self-taught could claim. I’d buy a windows laptop, erase the harddrive and put a linux kernal on it. That means your replacing the windows operating system with a linux operating system. It feels a little bad throwing away the operating system that came with your PC, but you can back it up on an external harddrive or CDs if it makes you feel better. We aren’t working in Windows because it’s a bit harder for the most part. Generally everything you can do, programming related, in Windows you can more easily do and set up in Linux.&lt;/p&gt;
 
-&lt;p&gt;Tutorials&lt;/p&gt;
+&lt;p&gt;I recommend looking for pre built laptops with ~4 gigs of Ram and 2.4GHz at the minimum. I wouldn’t feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.&lt;/p&gt;
+
+&lt;h4 id=&quot;gettin-gstarted&quot;&gt;Gettin gStarted&lt;/h4&gt;
+
+&lt;p&gt;I recommend starting with OpenCourseWare. Lots of top institutions including &lt;add some=&quot;&quot; links=&quot;&quot; here=&quot;&quot;&gt;Harvard, MIT, Yale and Stanford have coding courses free online. You don&#39;t get the personalized mentorship that would help with a TA to ask questions, or even the office hours, but you get the material and if you can commit it to memory, you can do it. It&#39;s full press all knowledge. You need to go in with that get an A in the course effort.&lt;/add&gt;&lt;/p&gt;
+
+&lt;p&gt;I would start with the best course I’ve taken&lt;/p&gt;
+
+&lt;h4 id=&quot;cs50-at-harvard&quot;&gt;CS50 at Harvard.&lt;/h4&gt;
+
+&lt;p&gt;The introduction to computer programming course &lt;a href=&quot;https://cs50.harvard.edu/&quot;&gt;CS50&lt;/a&gt; is eye opening. They teach you the basics very well, it’s all set up in a nice package. There is a wealth of material including lectures and TA sections where they teach you everything you need to know. It also feels very supportive. They have worked hard to get the class online and working well and a lot of people worldwide are taking it. They mostly work in PHP and C++, but they cover the basics well and the concepts for web and phone app development.&lt;/p&gt;
+
+&lt;h4 id=&quot;a-sampling&quot;&gt;A Sampling&lt;/h4&gt;
+
+&lt;p&gt;From here pick and choose a direction and courses. I enjoyed learning a bit more about security and structure, although it’s very math intensive.&lt;/p&gt;
+
+&lt;p&gt;Cryptography
+include tutorial&lt;/p&gt;
+
+&lt;p&gt;Web app development
+include tutorial&lt;/p&gt;
+
+&lt;p&gt;phone app development
+include tutorial&lt;/p&gt;
+
+&lt;h4 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h4&gt;
+
+&lt;p&gt;If you want a job, they want to know you’ve taken a course or two in algorithms. The prerequisites are courses the first year of college &lt;a href=&quot;http://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/&quot;&gt;Calculus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials. There are even dozens of bootcamps in every major city, that said, these are 6 month crash courses. If you study and push through you can get it done, but you only have a language or skill and I’m not sure how well refinded the concepts are. I don’t know how well they transition into paying jobs either, but to each their own.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 13 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/13/where-to-begin-with-self-instructed-cs/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/13/where-to-begin-with-self-instructed-cs/</guid>
+        <pubDate>Thu, 19 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/19/where-to-begin-with-self-instructed-cs/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/19/where-to-begin-with-self-instructed-cs/</guid>
         
-        <category>ComputerScience</category>
+        <category>Instruction</category>
         
-        <category>Self-Instruction</category>
+        <category>Free</category>
+        
+        <category>OpenCourseWare</category>
         
         
-        <category>Blog</category>
+        <category>OpenCourseWare</category>
         
       </item>
     
@@ -41,7 +77,7 @@
   &lt;li&gt;&lt;a href=&quot;#install-ruby&quot; id=&quot;markdown-toc-install-ruby&quot;&gt;Install Ruby&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#install-jekyll&quot; id=&quot;markdown-toc-install-jekyll&quot;&gt;Install Jekyll&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#a-few-pointers&quot; id=&quot;markdown-toc-a-few-pointers&quot;&gt;A Few Pointers&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#some-concise-theme-caveats&quot; id=&quot;markdown-toc-some-concise-theme-caveats&quot;&gt;Some Concise Theme Caveats&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#caveats&quot; id=&quot;markdown-toc-caveats&quot;&gt;Caveats&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -74,19 +110,17 @@
 
 &lt;p&gt;Out of the box Jekyll comes with a simple some HTML and CSS included. If you don&#39;t like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.&lt;/p&gt;
 
-&lt;p&gt;I use a &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt; from, which is pretty much just an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt; . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;http://jekyllthemes.org/themes/cool-concise-high-end/&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included what I used in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers.&lt;/p&gt;
+&lt;p&gt;I use a &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt; from, which is pretty much just an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt; . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;https://github.com/Gaohaoyang/gaohaoyang.github.io&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers.&lt;/p&gt;
 
-&lt;h5 id=&quot;some-concise-theme-caveats&quot;&gt;Some Concise Theme Caveats&lt;/h5&gt;
+&lt;h5 id=&quot;caveats&quot;&gt;Caveats&lt;/h5&gt;
 
-&lt;p&gt;The tags feature requires at least two pages with different tags or it will through a divide by 0 error.&lt;/p&gt;
+&lt;p&gt;The Concise theme “tag” feature requires at least two pages with different tags or you will get a divide by 0 error.&lt;/p&gt;
 
-&lt;p&gt;To utilize the excerpt of the full blog page, keep 3 empty rows between the excerpt and the main body of the content.&lt;/p&gt;
+&lt;p&gt;To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.&lt;/p&gt;
 
-&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll’s site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll site&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.&lt;/p&gt;
-
-&lt;p&gt;Gaohaoyang does have a request for linking that the theme was created by him in the footer. I think that’s asking a bit much for a Jekyll Theme. Additionally the general concensus is if it&#39;s out there for public use with an MIT license you can pretty much do what you want with it. Lastly, I&#39;m modifying and building on his work like all programmers do. At some point we have to draw a line between our work and our predecessors.&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 May 2016 00:00:00 -0700</pubDate>
         <link>https://www.mikepotato.com/2016/05/11/how-to-create-a-jekyll-blog/</link>
@@ -99,7 +133,7 @@
         <category>HowTo</category>
         
         
-        <category>Blog</category>
+        <category>Jekyll</category>
         
       </item>
     
@@ -174,7 +208,7 @@
         <category>StaticApp</category>
         
         
-        <category>Blog</category>
+        <category>Jekyll</category>
         
       </item>
     
@@ -218,7 +252,7 @@
         <category>StaticApp</category>
         
         
-        <category>Blog</category>
+        <category>Jekyll</category>
         
       </item>
     

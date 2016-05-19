@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Create a Jekyll Blog
-category: Blog
+category: Jekyll
 tags: Jekyll StaticApp HowTo
 ---
 
@@ -37,16 +37,14 @@ The Jekyll website has all the information you need to get started writing posts
 
 Out of the box Jekyll comes with a simple some HTML and CSS included. If you don\'t like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search. 
 
-I use a [Jekyll theme](http://jekyllthemes.org/) from, which is pretty much just an aggregation site. I was a fan of both [Yellow Blue](http://jekyllthemes.org/themes/yellowblue/) and [WikiBlog](http://jekyllthemes.org/themes/wiki-blog/) . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to [Concise-high-end Theme](http://jekyllthemes.org/themes/cool-concise-high-end/). It\'s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included what I used in my [github](https://github.com/papercliphat/concise_theme_jekyll) for English speakers.
+I use a [Jekyll theme](http://jekyllthemes.org/) from, which is pretty much just an aggregation site. I was a fan of both [Yellow Blue](http://jekyllthemes.org/themes/yellowblue/) and [WikiBlog](http://jekyllthemes.org/themes/wiki-blog/) . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to [Concise-high-end Theme](https://github.com/Gaohaoyang/gaohaoyang.github.io). It\'s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my [github](https://github.com/papercliphat/concise_theme_jekyll) for English speakers.
 
-##### Some Concise Theme Caveats
+##### Caveats
 
-The tags feature requires at least two pages with different tags or it will through a divide by 0 error.
+The Concise theme "tag" feature requires at least two pages with different tags or you will get a divide by 0 error.
 
-To utilize the excerpt of the full blog page, keep 3 empty rows between the excerpt and the main body of the content.
+To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.
 
-You\'ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on [Jekyll's site](https://jekyllrb.com/)
+You\'ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the [Jekyll site](https://jekyllrb.com/)
 
 Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of "disquis jekyll" will lead you on the right path.
-
-Gaohaoyang does have a request for linking that the theme was created by him in the footer. I think that's asking a bit much for a Jekyll Theme. Additionally the general concensus is if it\'s out there for public use with an MIT license you can pretty much do what you want with it. Lastly, I\'m modifying and building on his work like all programmers do. At some point we have to draw a line between our work and our predecessors.
