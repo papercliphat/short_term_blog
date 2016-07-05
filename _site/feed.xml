@@ -5,60 +5,99 @@
     <description></description>
     <link>https://www.mikepotato.com/</link>
     <atom:link href="https://www.mikepotato.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 May 2016 05:59:39 -0700</pubDate>
-    <lastBuildDate>Thu, 19 May 2016 05:59:39 -0700</lastBuildDate>
+    <pubDate>Mon, 04 Jul 2016 22:52:44 -0700</pubDate>
+    <lastBuildDate>Mon, 04 Jul 2016 22:52:44 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
         <title>Beginning Self-Instructed CS</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-you-need&quot; id=&quot;markdown-toc-what-you-need&quot;&gt;What You Need&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#gettin-gstarted&quot; id=&quot;markdown-toc-gettin-gstarted&quot;&gt;Gettin gStarted&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#the-tool-you-need&quot; id=&quot;markdown-toc-the-tool-you-need&quot;&gt;The Tool You Need&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#getting-started&quot; id=&quot;markdown-toc-getting-started&quot;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#cs50-at-harvard&quot; id=&quot;markdown-toc-cs50-at-harvard&quot;&gt;CS50 at Harvard.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#a-sampling&quot; id=&quot;markdown-toc-a-sampling&quot;&gt;A Sampling&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#algorithms&quot; id=&quot;markdown-toc-algorithms&quot;&gt;Algorithms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#web-app-development&quot; id=&quot;markdown-toc-web-app-development&quot;&gt;Web App Development&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#rubyror-online-resources&quot; id=&quot;markdown-toc-rubyror-online-resources&quot;&gt;Ruby/RoR online resources&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#build-something&quot; id=&quot;markdown-toc-build-something&quot;&gt;Build Something!&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Teaching yourself how to code is not really that hard. It takes a good deal of effort, focus and time, but if you’ve got those resources, you can get it done! There are plenty of skilled computer programmers from the 80’s to today who didn’t go to college and are self educated. As I’ve read, most of these folks had other cards up their sleves, like working with computer code since middle or high school. A lot of them just didn’t have an interest in college. For the most part, they had some serious resources, but today, those resources are more widely availabe.&lt;/p&gt;
+&lt;p&gt;Teaching yourself how to code is hard. It takes a good deal of effort, focus and time, but if you’ve got those resources, you can get it done! There are plenty of skilled computer programmers today who didn’t go to college to learn to code. A of these folks had other cards up their sleves, like computers at home and had been working with computer code since middle or high school. For the most part, they had some serious resources, but today, those resources are more widely available, you just need to know how to find them.&lt;/p&gt;
 
-&lt;h4 id=&quot;what-you-need&quot;&gt;What You Need&lt;/h4&gt;
+&lt;h4 id=&quot;the-tool-you-need&quot;&gt;The Tool You Need&lt;/h4&gt;
 
-&lt;p&gt;A half decent computer. Today, for about $400 USD, you can get a programming laptop. It won’t be the fast, and you might get frustrated with it, but it will have the tools you need. That’s a lot more than these other folks who self-taught could claim. I’d buy a windows laptop, erase the harddrive and put a linux kernal on it. That means your replacing the windows operating system with a linux operating system. It feels a little bad throwing away the operating system that came with your PC, but you can back it up on an external harddrive or CDs if it makes you feel better. We aren’t working in Windows because it’s a bit harder for the most part. Generally everything you can do, programming related, in Windows you can more easily do and set up in Linux.&lt;/p&gt;
+&lt;p&gt;Today, for ~$200-400 USD you can get a pretty good programming computer. I recommend looking for pre-built laptops with ~4 gigs of Ram and ~2.4GHz processing speed. I wouldn’t feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.&lt;/p&gt;
 
-&lt;p&gt;I recommend looking for pre built laptops with ~4 gigs of Ram and 2.4GHz at the minimum. I wouldn’t feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.&lt;/p&gt;
+&lt;h4 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h4&gt;
 
-&lt;h4 id=&quot;gettin-gstarted&quot;&gt;Gettin gStarted&lt;/h4&gt;
+&lt;p&gt;There are two easier ways to learn to code. Free open courses, and doing several tutorials.&lt;/p&gt;
 
-&lt;p&gt;I recommend starting with OpenCourseWare. Lots of top institutions including &lt;add some=&quot;&quot; links=&quot;&quot; here=&quot;&quot;&gt;Harvard, MIT, Yale and Stanford have coding courses free online. You don&#39;t get the personalized mentorship that would help with a TA to ask questions, or even the office hours, but you get the material and if you can commit it to memory, you can do it. It&#39;s full press all knowledge. You need to go in with that get an A in the course effort.&lt;/add&gt;&lt;/p&gt;
+&lt;p&gt;Lots of top institutions including &lt;a href=&quot;https://www.extension.harvard.edu/academics/online-campus-courses&quot;&gt;Harvard&lt;/a&gt;, &lt;a href=&quot;ocw.mit.edu/index.htm&quot;&gt;MIT&lt;/a&gt;, &lt;a href=&quot;oyc.yale.edu/courses&quot;&gt;Yale&lt;/a&gt; and &lt;a href=&quot;online.stanford.ecu/courses&quot;&gt;Stanford&lt;/a&gt; have free open online courses, often called OpenCourseware. You don’t get the personalized mentorship, tutoring, a TA, or even the office hours, but you get the material and if you can commit it to memory and study effectively, you can do it. It’s full press all knowledge.&lt;/p&gt;
 
-&lt;p&gt;I would start with the best course I’ve taken&lt;/p&gt;
+&lt;p&gt;Full disclosure: You need to go in with that get an A in the course effort.&lt;/p&gt;
+
+&lt;p&gt;Running through tutorials is very much a hunt, find and assemble enough material situation. But there are plenty of resources available online, and very many tutorials to fill up your noggin.&lt;/p&gt;
+
+&lt;p&gt;This is how I began:&lt;/p&gt;
 
 &lt;h4 id=&quot;cs50-at-harvard&quot;&gt;CS50 at Harvard.&lt;/h4&gt;
 
-&lt;p&gt;The introduction to computer programming course &lt;a href=&quot;https://cs50.harvard.edu/&quot;&gt;CS50&lt;/a&gt; is eye opening. They teach you the basics very well, it’s all set up in a nice package. There is a wealth of material including lectures and TA sections where they teach you everything you need to know. It also feels very supportive. They have worked hard to get the class online and working well and a lot of people worldwide are taking it. They mostly work in PHP and C++, but they cover the basics well and the concepts for web and phone app development.&lt;/p&gt;
+&lt;p&gt;This is the best course I have ever taken. The introduction to computer programming course, &lt;a href=&quot;https://cs50.harvard.edu/&quot;&gt;CS50&lt;/a&gt;, is eye opening. They teach you the basics very well, it&#39;s all set up in a nice package. There is a wealth of material including lectures and TA sections where they teach you everything you need to know. It also feels very supportive. They have worked hard to get the class online and working well. A lot of people worldwide are taking it and it has expanded to include Yale too. If you take it while the actual course is going on, you get a ton of addional educational resources too! But don&#39;t let that stop you from getting started now.&lt;/p&gt;
 
-&lt;h4 id=&quot;a-sampling&quot;&gt;A Sampling&lt;/h4&gt;
+&lt;p&gt;CS50 mostly works in C/C++ with a bit of PHP/Javascript, but they cover the basics well and the concepts underlying web and phone app development.&lt;/p&gt;
 
-&lt;p&gt;From here pick and choose a direction and courses. I enjoyed learning a bit more about security and structure, although it’s very math intensive.&lt;/p&gt;
-
-&lt;p&gt;Cryptography
-include tutorial&lt;/p&gt;
-
-&lt;p&gt;Web app development
-include tutorial&lt;/p&gt;
-
-&lt;p&gt;phone app development
-include tutorial&lt;/p&gt;
+&lt;p&gt;Additionally CS50 has step-by-step &lt;a href=&quot;https://manual.cs50.net/appliance/19/&quot;&gt;instructions&lt;/a&gt; on how to get a virtual machine up and running. This is particularly helpful because it can save you a ton of discouraging set-up time on day 1.&lt;/p&gt;
 
 &lt;h4 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h4&gt;
 
-&lt;p&gt;If you want a job, they want to know you’ve taken a course or two in algorithms. The prerequisites are courses the first year of college &lt;a href=&quot;http://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/&quot;&gt;Calculus&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want a software development position, you can increase your prospects with a course or two in algorithms. The prerequisites are a year of college &lt;a href=&quot;http://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/&quot;&gt;Calculus&lt;/a&gt;. At the undergraduate level &lt;a href=&quot;http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/index.htm?utm_source=OCWDept&amp;amp;utm_medium=CarouselSm&amp;amp;utm_campaign=FeaturedCourse&quot;&gt;Design and Analysis of Algorithms&lt;/a&gt; from 2015 is the MIT intro to algorithms course. They have others listed, but the name was changed. If you are particularly ambitious, try your hand at a more specialized algorithms course, where algorithms are applied, in Biology or Animation.&lt;/p&gt;
 
-&lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials. There are even dozens of bootcamps in every major city, that said, these are 6 month crash courses. If you study and push through you can get it done, but you only have a language or skill and I’m not sure how well refinded the concepts are. I don’t know how well they transition into paying jobs either, but to each their own.&lt;/p&gt;
+&lt;h4 id=&quot;web-app-development&quot;&gt;Web App Development&lt;/h4&gt;
+
+&lt;p&gt;I wanted to learn web app development and Ruby on Rails in particular.&lt;/p&gt;
+
+&lt;p&gt;There was a web dev course offered at Stanford called CS142 that taught RoR, which has since been updated to a MEAN stack. I explored it, but it only had lecture notes and projects. That’s enough to push through a course, but wasn’t as full as I hoped.&lt;/p&gt;
+
+&lt;p&gt;Ruby on Rails is a web application framework built in Ruby. I pointed to the appropriate resources for installing &lt;a href=&quot;www.robosto.com/2016/05/23/how-to-create-a-jekyll-blog/#install-ruby&quot;&gt;Ruby&lt;/a&gt; in a previous Jekyll blog utilizing RVM. To add Ruby on Rails, open up the console and&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ mkdir myrailsapp&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ cd myrailsapp&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ rvm use ruby-2.3.1@myrailsapp –ruby-version –create&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ gem install rails&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ rails new .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You’ve now got a fresh rails installation.&lt;/p&gt;
+
+&lt;h6 id=&quot;rubyror-online-resources&quot;&gt;Ruby/RoR online resources&lt;/h6&gt;
+
+&lt;p&gt;If you want to learn how to use Ruby on your own there are quite a few resources. I would start with the free &lt;a href=&quot;tryruby.org&quot;&gt;Try Ruby&lt;/a&gt; Tutorial, then do the &lt;a href=&quot;railsforzombies.org&quot;&gt;Rails for Zombies&lt;/a&gt; tutorial. I would then start with Michael Hartl&#39;s &lt;a href=&quot;https://www.railstutorial.org/&quot;&gt;tutorial&lt;/a&gt;. Hartl does a great job exaplining the basics. To finish off the beginning stages I would now begin with the &lt;a href=&quot;guides.rubyonrails.org&quot;&gt;Ruby on Rails guides&lt;/a&gt;. When I was a novice programmer, I wish I had gone through the work in this order. Reading the Rails guides was a bit more than I was ready for before working through Hartl&#39;s tutorial, and having a bit of time to juice up some Ruby/RoR in Try Ruby and Zombies was of great help.&lt;/p&gt;
+
+&lt;p&gt;(There are Rails web dev courses available, and Stanford has a course now focusing on a MEAN stack.)&lt;/p&gt;
+
+&lt;h6 id=&quot;build-something&quot;&gt;Build Something!&lt;/h6&gt;
+
+&lt;p&gt;The most important step after learning how to use a language is to build something yourself. You can build Amazon for Rocks or Pinterest for shoes. It doesn’t have to be practical, but you need to create something to hone your skills and plug in the gaps between the tutorials and what is practical. You’ll learn about cacheing, new Javascript frameworks like AngularJS and a ton of other important materials to really build something great.&lt;/p&gt;
+
+&lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you the basics. I have heard them scoffed at before, but I personally think they are legit. If you study and learn the material, whether it’s from a course, tutorials or a bootcamp you have it. There is not much else to it.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/19/where-to-begin-with-self-instructed-cs/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/19/where-to-begin-with-self-instructed-cs/</guid>
+        <pubDate>Mon, 30 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/30/beginning-self-instructed-cs/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/30/beginning-self-instructed-cs/</guid>
         
         <category>Instruction</category>
         
@@ -77,32 +116,49 @@ include tutorial&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#install-ruby&quot; id=&quot;markdown-toc-install-ruby&quot;&gt;Install Ruby&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#install-jekyll&quot; id=&quot;markdown-toc-install-jekyll&quot;&gt;Install Jekyll&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#a-few-pointers&quot; id=&quot;markdown-toc-a-few-pointers&quot;&gt;A Few Pointers&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#caveats&quot; id=&quot;markdown-toc-caveats&quot;&gt;Caveats&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#caveats-of-concise-high-end-theme&quot; id=&quot;markdown-toc-caveats-of-concise-high-end-theme&quot;&gt;Caveats of Concise-high-end Theme&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#footnotes&quot; id=&quot;markdown-toc-footnotes&quot;&gt;Footnotes:&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is less of a How to, and more of a let me point you in the right direction. Then I&#39;ll throw in a couple pointers on how you can make an identical site to mine. It&#39;s going to be light on content, mosty full of links, but if you&#39;ve never built anything in Jekyll it&#39;s helpful to have instructions on how to proceed.&lt;/p&gt;
+&lt;p&gt;This is less than an expansive How To, and more of a let me point you exactly to the resources you need and explain why or how that resource is important. I&#39;ll throw in ways you can make an identical site to mine. If you&#39;ve never built anything in Jekyll it&#39;s helpful to have a step-wise guide on how to proceed.&lt;/p&gt;
 
 &lt;h4 id=&quot;install-ruby&quot;&gt;Install Ruby&lt;/h4&gt;
 
 &lt;p&gt;The first step to building a Jekyll Blog is to install Ruby!&lt;/p&gt;
 
-&lt;p&gt;Ruby has a some decent instructions at the &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby official site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ruby has a some great step-by-step instructions at the &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby official site&lt;/a&gt;. Find your operating system and get started.&lt;/p&gt;
 
-&lt;p&gt;I used RVM (Ruby Version Manager) to both manage and install Ruby. I&#39;ve never actually needed to use a specific Ruby version, but it was the easiest way to install Ruby on my system. We can visit &lt;a href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM’s official site&lt;/a&gt; for detailed instructions.&lt;/p&gt;
+&lt;p&gt;Warning: Ruby runs best on Ubuntu(Linux) and Mac. I’ve played with it in Fedora(Linux) and it wasn’t as easy to install for me. It will install in windows, but there are some issues with running Ruby on Rails and… I think Javascript frameworks. I actually use a Windows PC with a virtual machine set up through VMware.&lt;/p&gt;
 
-&lt;p&gt;For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”&lt;/p&gt;
+&lt;p&gt;I used RVM (Ruby Version Manager) to both manage and install Ruby. I&#39;ve never actually needed to use a specific Ruby version, which is their touted feature, but it was the easiest way to install Ruby on my system. We can visit &lt;a href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM’s official site&lt;/a&gt; for detailed instructions.&lt;/p&gt;
+
+&lt;p&gt;For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”, but be ready to wrestle with set up technical issues.&lt;/p&gt;
 
 &lt;h4 id=&quot;install-jekyll&quot;&gt;Install Jekyll&lt;/h4&gt;
 
-&lt;p&gt;Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll official site&lt;/a&gt; we can find all the info to get started.&lt;/p&gt;
+&lt;p&gt;Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Jekyll official site&lt;/a&gt; we can have an extensive installation guide.&lt;/p&gt;
 
-&lt;p&gt;Once Ruby is installed it, it&#39;s just opening up the console and typing:&lt;/p&gt;
+&lt;p&gt;The quick installation is &lt;sup&gt;1&lt;sup&gt;&lt;/sup&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;$gem install Jekyll&lt;/p&gt;
+  &lt;p&gt;$ gem install Jekyll&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ jekyll new my-site&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ cd my-site&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;my-site$ jekyll serve&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then go to http://localhost:4000 in your browser&lt;/p&gt;
 
 &lt;p&gt;The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it&#39;s a worthwhile read.&lt;/p&gt;
 
@@ -110,25 +166,29 @@ include tutorial&lt;/p&gt;
 
 &lt;p&gt;Out of the box Jekyll comes with a simple some HTML and CSS included. If you don&#39;t like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.&lt;/p&gt;
 
-&lt;p&gt;I use a &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt; from, which is pretty much just an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt; . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;https://github.com/Gaohaoyang/gaohaoyang.github.io&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers.&lt;/p&gt;
+&lt;p&gt;I something from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;, which is an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt;. I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;https://github.com/Gaohaoyang/gaohaoyang.github.io&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers. But spend some time exploring on your own for ideas you can build on.&lt;/p&gt;
 
-&lt;h5 id=&quot;caveats&quot;&gt;Caveats&lt;/h5&gt;
+&lt;h5 id=&quot;caveats-of-concise-high-end-theme&quot;&gt;Caveats of Concise-high-end Theme&lt;/h5&gt;
 
 &lt;p&gt;The Concise theme “tag” feature requires at least two pages with different tags or you will get a divide by 0 error.&lt;/p&gt;
 
 &lt;p&gt;To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.&lt;/p&gt;
 
-&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;Jekyll site&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.&lt;/p&gt;
+&lt;p&gt;Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, which requires registration and was a bit too much hassle for me. If you want comments, a “disquis jekyll” google search will send you to a ton of videos and guides to assist.&lt;/p&gt;
+
+&lt;h5 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h5&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The $ denotes using the terminal aka console to type this code. You’ll see it a lot while your programming, but for me on day 1, I didn’t understand it.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Wed, 11 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/11/how-to-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/11/how-to-create-a-jekyll-blog/</guid>
+        <pubDate>Mon, 23 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/23/how-to-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/23/how-to-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
-        
-        <category>StaticApp</category>
         
         <category>HowTo</category>
         
@@ -156,36 +216,39 @@ include tutorial&lt;/p&gt;
 
 &lt;h3 id=&quot;the-pros&quot;&gt;The Pros&lt;/h3&gt;
 
-&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box&lt;sup&gt;2&lt;/sup&gt;. Additionally, because it&#39;s so simple, it&#39;s fairly simple to optimize the code for speed and efficiency.&lt;/p&gt;
+&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box&lt;sup&gt;2&lt;/sup&gt;. Additionally, because it&#39;s so simple, it&#39;s fairly easy to optimize code for speed and efficiency.&lt;/p&gt;
 
-&lt;p&gt;If you need log-in, extensive commenting, photo hosting or hosting any type of data you should definitely move out of Jekyll and into a webapp framework that supports databases like Ruby on Rails, PHP, or Pythong to name a new.&lt;/p&gt;
+&lt;p&gt;If you need log-in, extensive commenting, photo hosting or hosting any type of data you should definitely move out of Jekyll and into a webapp framework that supports databases like Ruby on Rails, PHP, or Python to name a new.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-cons&quot;&gt;The Cons&lt;/h3&gt;
 
-&lt;p&gt;I consider these inconveniences inherent in the type of framework Jekyll is, but with enough inconveniences, we&#39;ve got a less preferable framework.&lt;/p&gt;
+&lt;p&gt;I consider these inconveniences inherent in the type of framework Jekyll is, but with enough inconveniences, we get a bit unhappy.&lt;/p&gt;
 
-&lt;p&gt;Photos and media have to be inserted manually. With some wites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn&#39;t have that, so if we&#39;ve got a dozen photos per post, it might be a good idea to consider switching.&lt;/p&gt;
+&lt;p&gt;Photos and media have to be inserted manually. With some sites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn&#39;t have that, so if we&#39;ve got a dozen photos per post, it might be a good idea to consider switching.&lt;/p&gt;
 
-&lt;p&gt;SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don&#39;t use them. For me, this is more of a personal blog, and I don&#39;t think it would be an optimal use of my time to extensively go down the $$$ route.&lt;/p&gt;
+&lt;p&gt;SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don&#39;t use them. For me, this is more of a personal body of work blog, and I don&#39;t think it would be an optimal use of my time.&lt;/p&gt;
 
 &lt;p&gt;Jekyll only works on computers where you are “set-up”. So if you&#39;ve got a laptop you do most of your work on, and a light weight underpowered mini-laptop for traveling, you would likely find it difficult to update or edit your website on the road.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-competition&quot;&gt;The Competition&lt;/h3&gt;
 
 &lt;h4 id=&quot;wordpress&quot;&gt;Wordpress&lt;/h4&gt;
+
 &lt;p&gt;Today, the biggest webapp framework is definitely Wordpress. A lot of folks knock it for it&#39;s resource use, but it&#39;s huge strength is in it&#39;s interface. Anyone can easily create a website on wordpress with virtually no programming knowledge. Additionally, the more difficult to do things like handling database log-ins and tarnsactions can be done with plugins. It&#39;s really easy to use and you can find a TON of sites that use Wordpress like The New York Times.&lt;/p&gt;
 
-&lt;p&gt;Wordpress works out of a browser and it has a simple editing system, but it is slower. It&#39;s also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, we&#39;ve also got a malware situation. Malware might get inserted into your site if you aren&#39;t constantly updating, and then you might run into anti-viruses not loading your site, loss of users trust and possibly SEO de-optimization.&lt;/p&gt;
+&lt;p&gt;Wordpress works out of a browser and it has a simple editing system, but it is slower. It&#39;s also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, and popularity there is also got a malware situation. Malware might get inserted into your site if you aren&#39;t constantly updating, and then you might run into anti-viruses programs warning users of your site, loss of users trust and possibly SEO de-optimization&lt;sup&gt;3&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;alternative-popular-static-site-generators&quot;&gt;Alternative Popular Static Site Generators&lt;/h4&gt;
 
 &lt;p&gt;Middleman - Also built in Ruby, but smaller than Jekyll. Some major websites use Middleman and if it works for them it can work for us.&lt;/p&gt;
 
-&lt;p&gt;Roots - Node.js based, built by Carrot which is a subsidiary of the Vice Media Group. I&lt;/p&gt;
+&lt;p&gt;Roots - Node.js based, built by Carrot which is a subsidiary of the Vice Media Group.&lt;/p&gt;
 
-&lt;p&gt;Hugo - Written in GO. I&#39;ve been hearing a lot of love for Hugo, but it might be because it&#39;s the new kid on the block that folks are touting it&#39;s horn.&lt;/p&gt;
+&lt;p&gt;Hugo - Written in GO. I&#39;ve been hearing a lot of love for Hugo, but it might be because it&#39;s the new kid on the block.&lt;/p&gt;
 
-&lt;p&gt;If you are having trouble choosing a Static Site Generator and don&#39;t don&#39;t have any coding experience I&#39;d just pick Jekyll or Wordpress. They are the big kids on the block, and it&#39;s more important that you get started so you can work through their fundamentals, than you spend time researching which is best. If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn&#39;t have any trouble finding tutorials to get you started.&lt;/p&gt;
+&lt;p&gt;If you are having trouble choosing a Static Site Generator and don&#39;t don&#39;t have any coding experience I&#39;d just pick Jekyll or Wordpress. It&#39;s more important to get started and work through the fundamentals, than spending significant time researching for very small gains. The larger frameworks also have more tutorials, guides, plug-ins and overall resources at your disposal.&lt;/p&gt;
+
+&lt;p&gt;If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn&#39;t have any trouble finding tutorials to get you started.&lt;/p&gt;
 
 &lt;h5 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h5&gt;
 
@@ -194,14 +257,16 @@ include tutorial&lt;/p&gt;
     &lt;p&gt;Paradigms include things like DRY - Don&#39;t repeat yourself. If you are repeating yourself over several sections, and you decide to make a change, you now have to make this change over several sections. This is both error prone (typos) and time consuming.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Becuase we have no communication between databases we are fast. We are just pulling up our already prepared data quickly. Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it&#39;s hosted, there isn&#39;t much to change. It&#39;s often the ability to be dynamic that presents security holes. With no databse, Jekyll is small and light. That means cheap. It also means we aren&#39;t sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.&lt;/p&gt;
+    &lt;p&gt;Becuase we have no communication between databases we are fast. We are just pulling up already prepared data quickly. Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it&#39;s hosted, there isn&#39;t much to change. It&#39;s often the ability to be dynamic that presents security holes. With no databse, Jekyll is small and light. That means cheap. It also means we aren&#39;t sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SEO optimization is sort of like a hidden black box. Search engines don’t publicly say all the ways they use to choose site rankings, but they tell us some of them and we get an impression of others. It&#39;s a likely case that sites with security warnings, suffer de-ranks, but it&#39;s unclear how severe those security issues have to be or how long.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
-
 </description>
-        <pubDate>Tue, 10 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/</guid>
+        <pubDate>Mon, 16 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/16/why-use-jekyll-to-create-a-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/16/why-use-jekyll-to-create-a-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -213,33 +278,31 @@ include tutorial&lt;/p&gt;
       </item>
     
       <item>
-        <title>Why Create a Jekyll Blog</title>
+        <title>Why Create a Blog</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#professional&quot; id=&quot;markdown-toc-professional&quot;&gt;Professional&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#good-measuring-stick&quot; id=&quot;markdown-toc-good-measuring-stick&quot;&gt;Good Measuring Stick&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#professional-uses&quot; id=&quot;markdown-toc-professional-uses&quot;&gt;Professional Uses&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#good-skills-measuring-stick&quot; id=&quot;markdown-toc-good-skills-measuring-stick&quot;&gt;Good Skills Measuring Stick&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;When I first started developing I didn&#39;t see the point in a blog. I pictured tumblr blogs full of food and selfies. That&#39;s not a fair assessment of blogs, and was particularly unfair to technical blogs. As I started learning and googling problems/techniques I found I often ran into blogs for potential solutions and thought pieces on problems. They weren&#39;t a direct guide, or all encompassing, but they were almost always a great starting point.&lt;/p&gt;
+&lt;p&gt;When I first started developing I didn&#39;t see the point in a blog. But, when I started learning beyond the basics and troubleshooting through google, or checking out alternative techniques, I often ran into blogs for potential solutions and thought pieces. Most of the time, I wasn&#39;nt receiving an expansive guide, or a lot of code, but they were almost always a great starting point.  A technical blog I often ran into in my early days was joshsoftware.com&lt;/p&gt;
 
-&lt;p&gt;But I figured these were just some folks with years of experience; a blog is for someone in like their fifth year programming who wants to give back to the community. Why extend the extra effort now? Could I even put out anything decent? I mean I&#39;m still learning. There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?&lt;/p&gt;
+&lt;p&gt;Even after running into technical blogs I figured these were just folks with years of experience; a blog is for someone in their fifth year programming who wants to give back to the community. Why should I extend the extra effort while I’m still learning? Could I even put out anything decent? There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?&lt;/p&gt;
 
-&lt;h4 id=&quot;professional&quot;&gt;Professional&lt;/h4&gt;
+&lt;h4 id=&quot;professional-uses&quot;&gt;Professional Uses&lt;/h4&gt;
 
-&lt;p&gt;When I started applying for software positions, I started seeing preferences towards individuals with personal websites aka blogs. Now at this point, I&#39;m like ok, I better figure out why this matters. Obviously your employer wants overachievers. They claim to want folks to eat breathe and sleep code. That&#39;s unrealistic… but a good employee is involved in their work. A great employee thinks about their field in their time off.&lt;/p&gt;
+&lt;p&gt;When I started exploring software positions, I began seeing preferences towards individuals with personal websites and blogs. Obviously an employer wants overachievers. Software posts often call for folks who enjoy programming in their offtime. We should maintain a good work life balance, but a great employee is involved in their work and does thinks about their field in their time off.&lt;/p&gt;
 
-&lt;p&gt;Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We&#39;re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog… We&#39;re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that&#39;s how people become great in their field. That&#39;s really what an employer really wants.&lt;/p&gt;
+&lt;p&gt;A blog can also be a….&lt;/p&gt;
 
-&lt;p&gt;Additionally if at some point your employer requests an article for their website or you decide to contribute something for publication, you already have a body of work to assist with the process.&lt;/p&gt;
+&lt;h4 id=&quot;good-skills-measuring-stick&quot;&gt;Good Skills Measuring Stick&lt;/h4&gt;
 
-&lt;h4 id=&quot;good-measuring-stick&quot;&gt;Good Measuring Stick&lt;/h4&gt;
+&lt;p&gt;A technical blog demonstrates a certain level of technical competence. If we start early enough and consistently a techincal blog can be an accurate measuring stick of skills. A sort of checkbox of abilities.&lt;/p&gt;
 
-&lt;p&gt;Futhermore a technical blog demonstrates a certain level of technical competence. If we start early enough a techincal blog can be a measuring stick of skills. A sort of checkbox of abilities… only anyone can read about those abilities and gather a fair assessment of how good they really are.&lt;/p&gt;
+&lt;p&gt;It’s true what they say. You don’t really understand something unless you can explain it to someone else. So get out there and write posts on the concepts you already know, or even write out the concepts you don’t know to find your faults. Worst case scenario, if you want to review something, you can fall back on your own personal body of work and see it again in your own words.&lt;/p&gt;
 
-&lt;p&gt;I&#39;ve decided to use mine in that way, to both pour in and test my knowledge.&lt;/p&gt;
-
-&lt;p&gt;Now the painfully obvious is clear. The folks starting blogs, aren&#39;t in their nth year programming. They are just like me and you. They took the intiative at some point, and their skills grew with them. Grew to the extent that now we can use their posts and a resource for our own growth.&lt;/p&gt;
+&lt;p&gt;Everyone with a technical blog is just like you and me. They took the intiative at some point, and their skills grew with them to the extent that now we can all use their posts and a resource for our own growth.&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 May 2016 00:00:00 -0700</pubDate>
         <link>https://www.mikepotato.com/2016/05/09/why-create-a-jekyll-blog/</link>
@@ -248,8 +311,6 @@ include tutorial&lt;/p&gt;
         <category>Jekyll</category>
         
         <category>JobPrep</category>
-        
-        <category>StaticApp</category>
         
         
         <category>Jekyll</category>

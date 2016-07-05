@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Why Create a Jekyll Blog
+title: Why Create a Blog
 category: Jekyll
-tags: Jekyll JobPrep StaticApp
+tags: Jekyll JobPrep
 ---
 
 * content
@@ -10,26 +10,24 @@ tags: Jekyll JobPrep StaticApp
 
 ---
 
-When I first started developing I didn\'t see the point in a blog. I pictured tumblr blogs full of food and selfies. That\'s not a fair assessment of blogs, and was particularly unfair to technical blogs. As I started learning and googling problems/techniques I found I often ran into blogs for potential solutions and thought pieces on problems. They weren\'t a direct guide, or all encompassing, but they were almost always a great starting point.
+When I first started developing I didn\'t see the point in a blog. But, when I started learning beyond the basics and troubleshooting through google, or checking out alternative techniques, I often ran into blogs for potential solutions and thought pieces. Most of the time, I wasn\'nt receiving an expansive guide, or a lot of code, but they were almost always a great starting point.  A technical blog I often ran into in my early days was joshsoftware.com
 
 
 
 
 
-But I figured these were just some folks with years of experience; a blog is for someone in like their fifth year programming who wants to give back to the community. Why extend the extra effort now? Could I even put out anything decent? I mean I\'m still learning. There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?
+Even after running into technical blogs I figured these were just folks with years of experience; a blog is for someone in their fifth year programming who wants to give back to the community. Why should I extend the extra effort while I'm still learning? Could I even put out anything decent? There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?
 
-#### Professional
+#### Professional Uses
 
-When I started applying for software positions, I started seeing preferences towards individuals with personal websites aka blogs. Now at this point, I\'m like ok, I better figure out why this matters. Obviously your employer wants overachievers. They claim to want folks to eat breathe and sleep code. That\'s unrealistic... but a good employee is involved in their work. A great employee thinks about their field in their time off.
+When I started exploring software positions, I began seeing preferences towards individuals with personal websites and blogs. Obviously an employer wants overachievers. Software posts often call for folks who enjoy programming in their offtime. We should maintain a good work life balance, but a great employee is involved in their work and does thinks about their field in their time off.
 
-Really great people in their fields think about their work all the time. How do I solve this problem is a life ethos. We\'re not talking about eating dinner with your partner and planning tomorrows schedule, but rather while shopping for grocieres, doing laundry, walking the dog... We\'re always thinking anyway, but if we direct our thought to our work, and improving our work, well.. that\'s how people become great in their field. That\'s really what an employer really wants.
+A blog can also be a....
 
-Additionally if at some point your employer requests an article for their website or you decide to contribute something for publication, you already have a body of work to assist with the process.
+#### Good Skills Measuring Stick
 
-#### Good Measuring Stick
+A technical blog demonstrates a certain level of technical competence. If we start early enough and consistently a techincal blog can be an accurate measuring stick of skills. A sort of checkbox of abilities.
 
-Futhermore a technical blog demonstrates a certain level of technical competence. If we start early enough a techincal blog can be a measuring stick of skills. A sort of checkbox of abilities... only anyone can read about those abilities and gather a fair assessment of how good they really are. 
+It's true what they say. You don't really understand something unless you can explain it to someone else. So get out there and write posts on the concepts you already know, or even write out the concepts you don't know to find your faults. Worst case scenario, if you want to review something, you can fall back on your own personal body of work and see it again in your own words.
 
-I\'ve decided to use mine in that way, to both pour in and test my knowledge.
-
-Now the painfully obvious is clear. The folks starting blogs, aren\'t in their nth year programming. They are just like me and you. They took the intiative at some point, and their skills grew with them. Grew to the extent that now we can use their posts and a resource for our own growth.
+Everyone with a technical blog is just like you and me. They took the intiative at some point, and their skills grew with them to the extent that now we can all use their posts and a resource for our own growth.

@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>How to Create a Jekyll Blog</title>
-    <meta name="description" content="This is less of a How to, and more of a let me point you in the right direction. Then I'll throw in a couple pointers on how you can make an identical site t...">
+    <meta name="description" content="This is less than an expansive How To, and more of a let me point you exactly to the resources you need and explain why or how that resource is important. I'...">
 
 
     <link rel="stylesheet" href=" /css/fontawesome/css/font-awesome.min.css ">
     <link rel="stylesheet" href=" /css/main.css ">
-    <link rel="canonical" href="https://www.mikepotato.com/2016/05/11/how-to-create-a-jekyll-blog/">
+    <link rel="canonical" href="https://www.mikepotato.com/2016/05/23/how-to-create-a-jekyll-blog/">
     <link rel="alternate" type="application/rss+xml" title="Mike Porter" href="https://www.mikepotato.com /feed.xml ">
 
 
@@ -57,7 +57,7 @@
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2016-05-11
+                <i class="fa fa-calendar"></i>2016-05-23
             </div>
 
             <div class="label-card">
@@ -97,9 +97,6 @@
         <!--a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a-->
         <a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a>&nbsp;
     
-        <!--a href="/tag/#StaticApp" title="Tag: StaticApp" rel="tag">StaticApp</a-->
-        <a href="/tag/#StaticApp" title="Tag: StaticApp" rel="tag">StaticApp</a>&nbsp;
-    
         <!--a href="/tag/#HowTo" title="Tag: HowTo" rel="tag">HowTo</a-->
         <a href="/tag/#HowTo" title="Tag: HowTo" rel="tag">HowTo</a>
     
@@ -116,32 +113,49 @@
   <li><a href="#install-ruby" id="markdown-toc-install-ruby">Install Ruby</a></li>
   <li><a href="#install-jekyll" id="markdown-toc-install-jekyll">Install Jekyll</a></li>
   <li><a href="#a-few-pointers" id="markdown-toc-a-few-pointers">A Few Pointers</a>    <ul>
-      <li><a href="#caveats" id="markdown-toc-caveats">Caveats</a></li>
+      <li><a href="#caveats-of-concise-high-end-theme" id="markdown-toc-caveats-of-concise-high-end-theme">Caveats of Concise-high-end Theme</a></li>
+      <li><a href="#footnotes" id="markdown-toc-footnotes">Footnotes:</a></li>
     </ul>
   </li>
 </ul>
 
-<p>This is less of a How to, and more of a let me point you in the right direction. Then I'll throw in a couple pointers on how you can make an identical site to mine. It's going to be light on content, mosty full of links, but if you've never built anything in Jekyll it's helpful to have instructions on how to proceed.</p>
+<p>This is less than an expansive How To, and more of a let me point you exactly to the resources you need and explain why or how that resource is important. I'll throw in ways you can make an identical site to mine. If you've never built anything in Jekyll it's helpful to have a step-wise guide on how to proceed.</p>
 
 <h4 id="install-ruby">Install Ruby</h4>
 
 <p>The first step to building a Jekyll Blog is to install Ruby!</p>
 
-<p>Ruby has a some decent instructions at the <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby official site</a>.</p>
+<p>Ruby has a some great step-by-step instructions at the <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby official site</a>. Find your operating system and get started.</p>
 
-<p>I used RVM (Ruby Version Manager) to both manage and install Ruby. I've never actually needed to use a specific Ruby version, but it was the easiest way to install Ruby on my system. We can visit <a href="https://rvm.io/rvm/install">RVM’s official site</a> for detailed instructions.</p>
+<p>Warning: Ruby runs best on Ubuntu(Linux) and Mac. I’ve played with it in Fedora(Linux) and it wasn’t as easy to install for me. It will install in windows, but there are some issues with running Ruby on Rails and… I think Javascript frameworks. I actually use a Windows PC with a virtual machine set up through VMware.</p>
 
-<p>For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”</p>
+<p>I used RVM (Ruby Version Manager) to both manage and install Ruby. I've never actually needed to use a specific Ruby version, which is their touted feature, but it was the easiest way to install Ruby on my system. We can visit <a href="https://rvm.io/rvm/install">RVM’s official site</a> for detailed instructions.</p>
+
+<p>For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”, but be ready to wrestle with set up technical issues.</p>
 
 <h4 id="install-jekyll">Install Jekyll</h4>
 
-<p>Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the <a href="https://jekyllrb.com/">Jekyll official site</a> we can find all the info to get started.</p>
+<p>Jekyll installation is insanely quick once you get Ruby installed properly. With a quick trip to the <a href="https://jekyllrb.com/docs/installation/">Jekyll official site</a> we can have an extensive installation guide.</p>
 
-<p>Once Ruby is installed it, it's just opening up the console and typing:</p>
+<p>The quick installation is <sup>1<sup></sup></sup></p>
 
 <blockquote>
-  <p>$gem install Jekyll</p>
+  <p>$ gem install Jekyll</p>
 </blockquote>
+
+<blockquote>
+  <p>$ jekyll new my-site</p>
+</blockquote>
+
+<blockquote>
+  <p>$ cd my-site</p>
+</blockquote>
+
+<blockquote>
+  <p>my-site$ jekyll serve</p>
+</blockquote>
+
+<p>Then go to http://localhost:4000 in your browser</p>
 
 <p>The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it's a worthwhile read.</p>
 
@@ -149,17 +163,23 @@
 
 <p>Out of the box Jekyll comes with a simple some HTML and CSS included. If you don't like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.</p>
 
-<p>I use a <a href="http://jekyllthemes.org/">Jekyll theme</a> from, which is pretty much just an aggregation site. I was a fan of both <a href="http://jekyllthemes.org/themes/yellowblue/">Yellow Blue</a> and <a href="http://jekyllthemes.org/themes/wiki-blog/">WikiBlog</a> . I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">Concise-high-end Theme</a>. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my <a href="https://github.com/papercliphat/concise_theme_jekyll">github</a> for English speakers.</p>
+<p>I something from <a href="http://jekyllthemes.org/">Jekyll theme</a>, which is an aggregation site. I was a fan of both <a href="http://jekyllthemes.org/themes/yellowblue/">Yellow Blue</a> and <a href="http://jekyllthemes.org/themes/wiki-blog/">WikiBlog</a>. I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to <a href="https://github.com/Gaohaoyang/gaohaoyang.github.io">Concise-high-end Theme</a>. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my <a href="https://github.com/papercliphat/concise_theme_jekyll">github</a> for English speakers. But spend some time exploring on your own for ideas you can build on.</p>
 
-<h5 id="caveats">Caveats</h5>
+<h5 id="caveats-of-concise-high-end-theme">Caveats of Concise-high-end Theme</h5>
 
 <p>The Concise theme “tag” feature requires at least two pages with different tags or you will get a divide by 0 error.</p>
 
 <p>To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.</p>
 
-<p>You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the <a href="https://jekyllrb.com/">Jekyll site</a></p>
+<p>You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the <a href="https://jekyllrb.com/docs/pagination/">Jekyll site</a></p>
 
-<p>Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, a quick google search of “disquis jekyll” will lead you on the right path.</p>
+<p>Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, which requires registration and was a bit too much hassle for me. If you want comments, a “disquis jekyll” google search will send you to a ton of videos and guides to assist.</p>
+
+<h5 id="footnotes">Footnotes:</h5>
+
+<ol>
+  <li>The $ denotes using the terminal aka console to type this code. You’ll see it a lot while your programming, but for me on day 1, I didn’t understand it.</li>
+</ol>
 
         </article>
         <hr>
@@ -172,19 +192,13 @@
                 
                     
                 
-                    
-                
             
                 
                     
                 
                     
                 
-                    
-                
             
-                
-                    
                 
                     
                 
@@ -201,7 +215,7 @@
                         <ul>
                         
                         <li class="relatedPost">
-                            <a href="https://www.mikepotato.com/2016/05/10/why-use-jekyll-to-create-a-blog/">Benefits of Jekyll in Static Apps
+                            <a href="https://www.mikepotato.com/2016/05/16/why-use-jekyll-to-create-a-blog/">Benefits of Jekyll in Static Apps
                             
                             </a>
                         </li>
@@ -211,11 +225,7 @@
                 
                     
                 
-                    
-                
             
-                
-                    
                 
                     
                 
@@ -229,7 +239,7 @@
                     
                         
                         <li class="relatedPost">
-                            <a href="https://www.mikepotato.com/2016/05/09/why-create-a-jekyll-blog/">Why Create a Jekyll Blog
+                            <a href="https://www.mikepotato.com/2016/05/09/why-create-a-jekyll-blog/">Why Create a Blog
                             
                             </a>
                         </li>
@@ -239,19 +249,7 @@
                 
                     
                 
-                    
-                
             
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
                 
                     
                 
