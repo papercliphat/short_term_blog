@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Seeding a Database</title>
+    <meta name="description" content="I wanted to make a series of posts detailing various types of tree structures to organize data logically, but thought it would be too early without an explan...">
+
+
+    <link rel="stylesheet" href=" /css/fontawesome/css/font-awesome.min.css ">
+    <link rel="stylesheet" href=" /css/main.css ">
+    <link rel="canonical" href="https://www.mikepotato.com/2016/07/07/seeding-a-database/">
+    <link rel="alternate" type="application/rss+xml" title="Mike Porter" href="https://www.mikepotato.com /feed.xml ">
+
+
+</head>
+
+
+  <body>
+
+    <header>
+    <div class="wrapper">
+        <a href="/" class="brand">Mike Porter</a>
+        <small>Porter.Michael.James@gmail.com</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                
+                    
+                    <li>
+                        
+                        <a href="/history/">
+                        
+                            <i class="fa fa-"></i>History
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Seeding a Database</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2016-07-07
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#OpenCourseWare" title="Category: OpenCourseWare" rel="category">OpenCourseWare</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Instruction" title="Tag: Instruction" rel="tag">Instruction</a-->
+        <a href="/tag/#Instruction" title="Tag: Instruction" rel="tag">Instruction</a>&nbsp;
+    
+        <!--a href="/tag/#Seeding" title="Tag: Seeding" rel="tag">Seeding</a-->
+        <a href="/tag/#Seeding" title="Tag: Seeding" rel="tag">Seeding</a>&nbsp;
+    
+        <!--a href="/tag/#Rails" title="Tag: Rails" rel="tag">Rails</a-->
+        <a href="/tag/#Rails" title="Tag: Rails" rel="tag">Rails</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#how-seeding-works" id="markdown-toc-how-seeding-works">How Seeding Works</a>    <ul>
+      <li><a href="#faker" id="markdown-toc-faker">Faker</a></li>
+      <li><a href="#fixtures" id="markdown-toc-fixtures">Fixtures</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>I wanted to make a series of posts detailing various types of tree structures to organize data logically, but thought it would be too early without an explanation on seeding your database. Seeding a database is a basic tool we can use to add data to a database. It would be nuts to build an application without seeing where data goes and how it fits. Gems like faker are great tools to populate data automatically. I will also go into a bit about fixtures and the rake command.</p>
+
+<h4 id="how-seeding-works">How Seeding Works</h4>
+
+<p>Seeding a database is a piece of cake. Just open up <code class="highlighter-rouge">db/seeds.rb</code> and treat it like a normal ruby program in the rails environment. I am going to use a tree to organize some phylogenetic biology data. If you do not remember, those are the trees used to organize living things. So for an amoeba, which is that funky blog like micro-organism we would have:</p>
+
+<blockquote>
+  <p>Eukaryota &gt; Amoebozoa &gt; Tubulinea &gt; Loboda &gt; Tubulinda &gt; Amoebidae &gt; Amoeba &gt; Proteus</p>
+</blockquote>
+
+<p>This is complex, and hard for us to read, so I will just make up some simple data that goes one or two levels down. We’ll have a broad category of Animals, Plants and Micro-organisms. Animals will be subdivided into Reptiles, Birds and Fish. Plants will be subdivided Flowering and Non-flowering, and Micro-organisms won’t have any subdivisions at all. How you organize this data is the subject of the tree structure series, but we do have a bunch of names. So let’s seed a database of names.</p>
+
+<p>First we need to generate our model in Rails</p>
+
+<blockquote>
+  <p>$ rails g model Tree name:string</p>
+</blockquote>
+
+<blockquote>
+  <p>$ rake db:migrate</p>
+</blockquote>
+
+<p>Then we add some data!</p>
+
+<p>db/seeds.rb</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tree_list = [
+
+  "Animals",
+  "Plants",
+  "Micro-organisms",
+  "Reptiles",
+  "Birds",
+  "Fish",
+  "Gecko",
+  "Alligator",
+  "Iguana",
+  "Chicken",
+  "Blue Jay",
+  "Shark",
+  "Tuna",
+  "Dog Fish",
+  "Catfish",
+  "Amoeba",
+  "Algae",
+  "Phytoplankton",
+  ]
+
+tree_list.each do |phylum|
+  Tree.create( name: phylum )
+end
+</code></pre>
+</div>
+
+<p>Then we seed the db with</p>
+
+<blockquote>
+  <p>$ rails db:seed</p>
+</blockquote>
+
+<p>Pretty simple, all we’re doing is writing out some strings, and throwing them in a dot each do. But this took me a few mintues. I could not think of these all quickly, and did not want funky data. Like where would Whales go? I did not leave room for those. Micro-organisms was also Bacteria, until I realized I did not know any bacteria off the top of my head.</p>
+
+<h6 id="faker">Faker</h6>
+
+<p>In many common instances should save ourself some trouble and use Faker. We cannot get the same logic we could in our made up data, but we can create all sorts of things like addresses, names and universities.</p>
+
+<blockquote>
+  <p>$ gem install faker</p>
+</blockquote>
+
+<blockquote>
+  <p>$ bundle install</p>
+</blockquote>
+
+<p>Open up db/seeds.rb</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>99.times do |n|
+  name  = Faker::Name.name
+  Tree.create!(name:  name)
+end
+</code></pre>
+</div>
+
+<h6 id="fixtures">Fixtures</h6>
+
+<p>While we are on the subject of creating dummy data, fixtures are used to create dummy data for testing. One of the more prominent gems is factory_girl_rails.</p>
+
+
+        </article>
+        <hr>
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="https://www.mikepotato.com/2016/06/13/beginning-self-instructed-cs/">Beginning Self-Instructed CS
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/scroll.min.js " charset="utf-8"></script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>

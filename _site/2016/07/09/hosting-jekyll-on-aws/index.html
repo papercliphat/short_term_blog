@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hosting Jekyll on AWS</title>
+    <meta name="description" content="When you have a jekyll blog ready, and want to host it, Amazon Web Services (AWS) is one of the best tools to use. The first year is mostly free, I am paying...">
+
+
+    <link rel="stylesheet" href=" /css/fontawesome/css/font-awesome.min.css ">
+    <link rel="stylesheet" href=" /css/main.css ">
+    <link rel="canonical" href="https://www.mikepotato.com/2016/07/09/hosting-jekyll-on-aws/">
+    <link rel="alternate" type="application/rss+xml" title="Mike Porter" href="https://www.mikepotato.com /feed.xml ">
+
+
+</head>
+
+
+  <body>
+
+    <header>
+    <div class="wrapper">
+        <a href="/" class="brand">Mike Porter</a>
+        <small>Porter.Michael.James@gmail.com</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                
+                    
+                    <li>
+                        
+                        <a href="/history/">
+                        
+                            <i class="fa fa-"></i>History
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Hosting Jekyll on AWS</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2016-07-09
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Hosting" title="Category: Hosting" rel="category">Hosting</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a-->
+        <a href="/tag/#Jekyll" title="Tag: Jekyll" rel="tag">Jekyll</a>&nbsp;
+    
+        <!--a href="/tag/#AWS" title="Tag: AWS" rel="tag">AWS</a-->
+        <a href="/tag/#AWS" title="Tag: AWS" rel="tag">AWS</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#choosing-your-domain-name" id="markdown-toc-choosing-your-domain-name">Choosing Your Domain Name</a>    <ul>
+      <li><a href="#using-your-domain-name-with-another-host" id="markdown-toc-using-your-domain-name-with-another-host">Using Your Domain Name with Another Host</a></li>
+    </ul>
+  </li>
+  <li><a href="#using-s3website-to-host" id="markdown-toc-using-s3website-to-host">Using S3_website to Host</a>    <ul>
+      <li><a href="#set-up-s3-buckets" id="markdown-toc-set-up-s3-buckets">Set Up S3 Buckets</a></li>
+      <li><a href="#using-s3website-gem" id="markdown-toc-using-s3website-gem">Using s3_website gem</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>When you have a jekyll blog ready, and want to host it, Amazon Web Services (AWS) is one of the best tools to use. The first year is mostly free, I am paying 56 cents a month now. It is reliable. They guarantee 99.9% uptime, you only pay for what you use and it scales very well.</p>
+
+<h4 id="choosing-your-domain-name">Choosing Your Domain Name</h4>
+
+<p>Choosing your domain name is a difficult process. It will require creativity and a good understanding of what “types” of names are still available. A lot of names have been taken and just held onto hoping for a time when someone will pay five figures or more. I recommend checking <a href="www.panabee.com">Panabee</a> for some help brainstorming. They mix and match your name ideas and can help you step in the right direction.</p>
+
+<p>While choosing a great name is difficult, registering a name is incredibly easy. Some domain registrar companies even offer $.99 for your first domain name. SA few big DNRs are GoDaddy, Namecheap, Amazon Web Services and Google Domains.</p>
+
+<p>These DNRs also provide hosting services. It is easy to host on their service, but AWS and Google Domains have the cheapest and easiest hosting to upgrade. AWS and Google Domains both charge about $12 for registration, while GoDaddy and NameCheap charge anywhere from $.99 to $11.99.</p>
+
+<p>It should also be noted that GoDaddy has a reptuation for trying to upsell services. You will often get emails advertising 20% off your next registration and discounts they are offering. They also aren’t the best about maintaining security, and are somewhat susceptable to social hacking.</p>
+
+<p>Namecheap used to be much cheaper than GoDaddy, with regard to hosting, but they are now about on par in terms of cost. Namecheap does not send you nearly as much in terms of email advertisements though.</p>
+
+<h6 id="using-your-domain-name-with-another-host">Using Your Domain Name with Another Host</h6>
+
+<p>If you want to host with AWS, but chose a different DNR, you have to set up a nameserver change. This is fairly simple, but the exact process is slightly different for each DNR.</p>
+
+<p>To start create an account with <a href="https://aws.amazon.com">AWS</a>. You start with a mostly free year. We are then going to <a href="https://console.aws.amazon.com/route53">Route 53</a>.</p>
+
+<p>You can spend some time exploring the area, but Route 53 is a Domain Name System. We’re going to create a hosted zone. When we create a hosted zone we get 4 values of type NS (name server). These are our domain name servers that we are going to tell our doman name registrar to use.</p>
+
+<p>This part is a also fairly simple, but different for each DNR. You need to find your nameservers for your domain name. You should go to a page that lists your registered domain names. Then you need to find a settings button that opens up settings for that particular domain name. There should be an option for nameservers, you are going to want to add custom name servers and put in the 4 values of type NS that we got when we created a hosted zone.</p>
+
+<p>For GoDaddy you need to migrate to My products, then in domains click manage, then there is a gear pull down for each domain. We are going to use that to navigate to Manage DNS. Here we chage our nameservers to custom and include our 4 from route 53.</p>
+
+<h4 id="using-s3website-to-host">Using S3_website to Host</h4>
+
+<h6 id="set-up-s3-buckets">Set Up S3 Buckets</h6>
+
+<p>The first step to getting hosted is setting up an S3 AWS bucket. From route 53 click services in the header and migrate to S3. Today it is in the right most column, but I have heard they are revamping it soon.</p>
+
+<p>The S3 setup for AWS is also <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">here</a> if you want to look at an alternative solution sources.</p>
+
+<p>We will want to create two buckets. We don’t need logging, but you could if you want to log your visitors.</p>
+
+<blockquote>
+  <p>example.com</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>www.example.com</p>
+</blockquote>
+
+<p>We are going to host our data on one, and use the other to redirect. This way if someone types www.example.com, they automatically get forwarded to example.com. Use your domain registrar name so you do not have to do this twice. We are going to host our data on example.com.</p>
+
+<p>The buckets we need a permissions policy so everyone can read them. We can edit ours by clicking on our example.com bucket, clicking properties on the right hand side and selecting permissions. A window with Grantee and your username should come up. Below that we are going to click edit bucket policy and add:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+</span><span class="nt">"Version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-10-17"</span><span class="p">,</span><span class="w">
+</span><span class="nt">"Statement"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+	</span><span class="p">{</span><span class="w">
+		</span><span class="nt">"Sid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PublicReadForGetBucketObjects"</span><span class="p">,</span><span class="w">
+		</span><span class="nt">"Effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Allow"</span><span class="p">,</span><span class="w">
+		</span><span class="nt">"Principal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+			</span><span class="nt">"AWS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"*"</span><span class="w">
+		</span><span class="p">},</span><span class="w">
+		</span><span class="nt">"Action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"s3:GetObject"</span><span class="p">,</span><span class="w">
+		</span><span class="nt">"Resource"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arn:aws:s3:::example.com/*"</span><span class="w">
+	</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>Just like before replace example.com with your domain name.</p>
+
+<h6 id="using-s3website-gem">Using s3_website gem</h6>
+
+<p>The instructions linked to above from amazon are cumbersome. There are a lot of steps to set up a static website, that we can avoid by using <a href="https://github.com/laurilehmijoki/s3_website">s3_website gem</a>! First we need to install the gem</p>
+
+<blockquote>
+  <p>gem install s3_website</p>
+</blockquote>
+
+<p>Go ahead and run the gem</p>
+
+<blockquote>
+  <p>s3_website cfg create</p>
+</blockquote>
+
+<p>This creates s3_website.yml which stores our access keys and configuration options.</p>
+
+<p>We need to head back to AWS S3 and get our secret keys. In the action bar under services, in the second column from the right is IAM, Identity and Access Management. We are going to generate some secret keys here so that our jekyll has permission to deploy to AWS.</p>
+
+<p>Move over to Users on the left hand side and Create New Users. Add a user name. After hitting create there is a link highlighted titled Show User Security Credentials. That has our access keys. Copy the access key id: and Secret Access Key: to somewhere secure.</p>
+
+<p>Open the s3_website.yml we made a few minutes ago and input</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>s3_id: access key
+s3_secret: secret key
+s3_bucket: example.com
+</code></pre>
+</div>
+
+<p>We’re all done with set up.</p>
+
+<p>Finish up with</p>
+
+<blockquote>
+  <p>jekyll build</p>
+</blockquote>
+
+<p>and deploy with</p>
+
+<blockquote>
+  <p>s3_website push</p>
+</blockquote>
+
+        </article>
+        <hr>
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="https://www.mikepotato.com/2016/06/06/how-to-create-a-jekyll-blog/">How to Create a Jekyll Blog
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="https://www.mikepotato.com/2016/05/30/why-use-jekyll-to-create-a-blog/">Benefits of Jekyll in Static Apps
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="https://www.mikepotato.com/2016/05/23/why-create-a-jekyll-blog/">Why Create a Blog
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/scroll.min.js " charset="utf-8"></script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+  </body>
+
+</html>

@@ -1,7 +1,7 @@
 s3_id: AKIAIR5AEOEF2F76F7FA
 s3_secret: XWcpf4G9Ljc39cjJOqtpiysUqmjPr/nj7p0E0zpj
 s3_bucket: robosto.com
-cloudfront_distribution_id: E39S73T3WQM5DE
+
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
 

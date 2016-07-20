@@ -5,9 +5,260 @@
     <description></description>
     <link>https://www.mikepotato.com/</link>
     <atom:link href="https://www.mikepotato.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Jul 2016 22:52:44 -0700</pubDate>
-    <lastBuildDate>Mon, 04 Jul 2016 22:52:44 -0700</lastBuildDate>
+    <pubDate>Tue, 19 Jul 2016 19:31:20 -0700</pubDate>
+    <lastBuildDate>Tue, 19 Jul 2016 19:31:20 -0700</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Hosting Jekyll on AWS</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#choosing-your-domain-name&quot; id=&quot;markdown-toc-choosing-your-domain-name&quot;&gt;Choosing Your Domain Name&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#using-your-domain-name-with-another-host&quot; id=&quot;markdown-toc-using-your-domain-name-with-another-host&quot;&gt;Using Your Domain Name with Another Host&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#using-s3website-to-host&quot; id=&quot;markdown-toc-using-s3website-to-host&quot;&gt;Using S3_website to Host&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#set-up-s3-buckets&quot; id=&quot;markdown-toc-set-up-s3-buckets&quot;&gt;Set Up S3 Buckets&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#using-s3website-gem&quot; id=&quot;markdown-toc-using-s3website-gem&quot;&gt;Using s3_website gem&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you have a jekyll blog ready, and want to host it, Amazon Web Services (AWS) is one of the best tools to use. The first year is mostly free, I am paying 56 cents a month now. It is reliable. They guarantee 99.9% uptime, you only pay for what you use and it scales very well.&lt;/p&gt;
+
+&lt;h4 id=&quot;choosing-your-domain-name&quot;&gt;Choosing Your Domain Name&lt;/h4&gt;
+
+&lt;p&gt;Choosing your domain name is a difficult process. It will require creativity and a good understanding of what “types” of names are still available. A lot of names have been taken and just held onto hoping for a time when someone will pay five figures or more. I recommend checking &lt;a href=&quot;www.panabee.com&quot;&gt;Panabee&lt;/a&gt; for some help brainstorming. They mix and match your name ideas and can help you step in the right direction.&lt;/p&gt;
+
+&lt;p&gt;While choosing a great name is difficult, registering a name is incredibly easy. Some domain registrar companies even offer $.99 for your first domain name. SA few big DNRs are GoDaddy, Namecheap, Amazon Web Services and Google Domains.&lt;/p&gt;
+
+&lt;p&gt;These DNRs also provide hosting services. It is easy to host on their service, but AWS and Google Domains have the cheapest and easiest hosting to upgrade. AWS and Google Domains both charge about $12 for registration, while GoDaddy and NameCheap charge anywhere from $.99 to $11.99.&lt;/p&gt;
+
+&lt;p&gt;It should also be noted that GoDaddy has a reptuation for trying to upsell services. You will often get emails advertising 20% off your next registration and discounts they are offering. They also aren’t the best about maintaining security, and are somewhat susceptable to social hacking.&lt;/p&gt;
+
+&lt;p&gt;Namecheap used to be much cheaper than GoDaddy, with regard to hosting, but they are now about on par in terms of cost. Namecheap does not send you nearly as much in terms of email advertisements though.&lt;/p&gt;
+
+&lt;h6 id=&quot;using-your-domain-name-with-another-host&quot;&gt;Using Your Domain Name with Another Host&lt;/h6&gt;
+
+&lt;p&gt;If you want to host with AWS, but chose a different DNR, you have to set up a nameserver change. This is fairly simple, but the exact process is slightly different for each DNR.&lt;/p&gt;
+
+&lt;p&gt;To start create an account with &lt;a href=&quot;https://aws.amazon.com&quot;&gt;AWS&lt;/a&gt;. You start with a mostly free year. We are then going to &lt;a href=&quot;https://console.aws.amazon.com/route53&quot;&gt;Route 53&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can spend some time exploring the area, but Route 53 is a Domain Name System. We’re going to create a hosted zone. When we create a hosted zone we get 4 values of type NS (name server). These are our domain name servers that we are going to tell our doman name registrar to use.&lt;/p&gt;
+
+&lt;p&gt;This part is a also fairly simple, but different for each DNR. You need to find your nameservers for your domain name. You should go to a page that lists your registered domain names. Then you need to find a settings button that opens up settings for that particular domain name. There should be an option for nameservers, you are going to want to add custom name servers and put in the 4 values of type NS that we got when we created a hosted zone.&lt;/p&gt;
+
+&lt;p&gt;For GoDaddy you need to migrate to My products, then in domains click manage, then there is a gear pull down for each domain. We are going to use that to navigate to Manage DNS. Here we chage our nameservers to custom and include our 4 from route 53.&lt;/p&gt;
+
+&lt;h4 id=&quot;using-s3website-to-host&quot;&gt;Using S3_website to Host&lt;/h4&gt;
+
+&lt;h6 id=&quot;set-up-s3-buckets&quot;&gt;Set Up S3 Buckets&lt;/h6&gt;
+
+&lt;p&gt;The first step to getting hosted is setting up an S3 AWS bucket. From route 53 click services in the header and migrate to S3. Today it is in the right most column, but I have heard they are revamping it soon.&lt;/p&gt;
+
+&lt;p&gt;The S3 setup for AWS is also &lt;a href=&quot;http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html&quot;&gt;here&lt;/a&gt; if you want to look at an alternative solution sources.&lt;/p&gt;
+
+&lt;p&gt;We will want to create two buckets. We don’t need logging, but you could if you want to log your visitors.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;example.com&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;www.example.com&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We are going to host our data on one, and use the other to redirect. This way if someone types www.example.com, they automatically get forwarded to example.com. Use your domain registrar name so you do not have to do this twice. We are going to host our data on example.com.&lt;/p&gt;
+
+&lt;p&gt;The buckets we need a permissions policy so everyone can read them. We can edit ours by clicking on our example.com bucket, clicking properties on the right hand side and selecting permissions. A window with Grantee and your username should come up. Below that we are going to click edit bucket policy and add:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2012-10-17&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Statement&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Sid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublicReadForGetBucketObjects&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Effect&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Allow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Principal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+			&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;AWS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Action&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;s3:GetObject&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;Resource&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;arn:aws:s3:::example.com/*&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just like before replace example.com with your domain name.&lt;/p&gt;
+
+&lt;h6 id=&quot;using-s3website-gem&quot;&gt;Using s3_website gem&lt;/h6&gt;
+
+&lt;p&gt;The instructions linked to above from amazon are cumbersome. There are a lot of steps to set up a static website, that we can avoid by using &lt;a href=&quot;https://github.com/laurilehmijoki/s3_website&quot;&gt;s3_website gem&lt;/a&gt;! First we need to install the gem&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;gem install s3_website&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go ahead and run the gem&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;s3_website cfg create&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This creates s3_website.yml which stores our access keys and configuration options.&lt;/p&gt;
+
+&lt;p&gt;We need to head back to AWS S3 and get our secret keys. In the action bar under services, in the second column from the right is IAM, Identity and Access Management. We are going to generate some secret keys here so that our jekyll has permission to deploy to AWS.&lt;/p&gt;
+
+&lt;p&gt;Move over to Users on the left hand side and Create New Users. Add a user name. After hitting create there is a link highlighted titled Show User Security Credentials. That has our access keys. Copy the access key id: and Secret Access Key: to somewhere secure.&lt;/p&gt;
+
+&lt;p&gt;Open the s3_website.yml we made a few minutes ago and input&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s3_id: access key
+s3_secret: secret key
+s3_bucket: example.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’re all done with set up.&lt;/p&gt;
+
+&lt;p&gt;Finish up with&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;jekyll build&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and deploy with&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;s3_website push&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 09 Jul 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/07/09/hosting-jekyll-on-aws/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/07/09/hosting-jekyll-on-aws/</guid>
+        
+        <category>Jekyll</category>
+        
+        <category>AWS</category>
+        
+        
+        <category>Hosting</category>
+        
+      </item>
+    
+      <item>
+        <title>Seeding a Database</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-seeding-works&quot; id=&quot;markdown-toc-how-seeding-works&quot;&gt;How Seeding Works&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#faker&quot; id=&quot;markdown-toc-faker&quot;&gt;Faker&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fixtures&quot; id=&quot;markdown-toc-fixtures&quot;&gt;Fixtures&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I wanted to make a series of posts detailing various types of tree structures to organize data logically, but thought it would be too early without an explanation on seeding your database. Seeding a database is a basic tool we can use to add data to a database. It would be nuts to build an application without seeing where data goes and how it fits. Gems like faker are great tools to populate data automatically. I will also go into a bit about fixtures and the rake command.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-seeding-works&quot;&gt;How Seeding Works&lt;/h4&gt;
+
+&lt;p&gt;Seeding a database is a piece of cake. Just open up &lt;code class=&quot;highlighter-rouge&quot;&gt;db/seeds.rb&lt;/code&gt; and treat it like a normal ruby program in the rails environment. I am going to use a tree to organize some phylogenetic biology data. If you do not remember, those are the trees used to organize living things. So for an amoeba, which is that funky blog like micro-organism we would have:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Eukaryota &amp;gt; Amoebozoa &amp;gt; Tubulinea &amp;gt; Loboda &amp;gt; Tubulinda &amp;gt; Amoebidae &amp;gt; Amoeba &amp;gt; Proteus&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is complex, and hard for us to read, so I will just make up some simple data that goes one or two levels down. We’ll have a broad category of Animals, Plants and Micro-organisms. Animals will be subdivided into Reptiles, Birds and Fish. Plants will be subdivided Flowering and Non-flowering, and Micro-organisms won’t have any subdivisions at all. How you organize this data is the subject of the tree structure series, but we do have a bunch of names. So let’s seed a database of names.&lt;/p&gt;
+
+&lt;p&gt;First we need to generate our model in Rails&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ rails g model Tree name:string&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ rake db:migrate&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then we add some data!&lt;/p&gt;
+
+&lt;p&gt;db/seeds.rb&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tree_list = [
+
+  &quot;Animals&quot;,
+  &quot;Plants&quot;,
+  &quot;Micro-organisms&quot;,
+  &quot;Reptiles&quot;,
+  &quot;Birds&quot;,
+  &quot;Fish&quot;,
+  &quot;Gecko&quot;,
+  &quot;Alligator&quot;,
+  &quot;Iguana&quot;,
+  &quot;Chicken&quot;,
+  &quot;Blue Jay&quot;,
+  &quot;Shark&quot;,
+  &quot;Tuna&quot;,
+  &quot;Dog Fish&quot;,
+  &quot;Catfish&quot;,
+  &quot;Amoeba&quot;,
+  &quot;Algae&quot;,
+  &quot;Phytoplankton&quot;,
+  ]
+
+tree_list.each do |phylum|
+  Tree.create( name: phylum )
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then we seed the db with&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ rails db:seed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pretty simple, all we’re doing is writing out some strings, and throwing them in a dot each do. But this took me a few mintues. I could not think of these all quickly, and did not want funky data. Like where would Whales go? I did not leave room for those. Micro-organisms was also Bacteria, until I realized I did not know any bacteria off the top of my head.&lt;/p&gt;
+
+&lt;h6 id=&quot;faker&quot;&gt;Faker&lt;/h6&gt;
+
+&lt;p&gt;In many common instances should save ourself some trouble and use Faker. We cannot get the same logic we could in our made up data, but we can create all sorts of things like addresses, names and universities.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ gem install faker&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;$ bundle install&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Open up db/seeds.rb&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;99.times do |n|
+  name  = Faker::Name.name
+  Tree.create!(name:  name)
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h6 id=&quot;fixtures&quot;&gt;Fixtures&lt;/h6&gt;
+
+&lt;p&gt;While we are on the subject of creating dummy data, fixtures are used to create dummy data for testing. One of the more prominent gems is factory_girl_rails.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 07 Jul 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/07/07/seeding-a-database/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/07/07/seeding-a-database/</guid>
+        
+        <category>Instruction</category>
+        
+        <category>Seeding</category>
+        
+        <category>Rails</category>
+        
+        
+        <category>OpenCourseWare</category>
+        
+      </item>
     
       <item>
         <title>Beginning Self-Instructed CS</title>
@@ -23,11 +274,11 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Teaching yourself how to code is hard. It takes a good deal of effort, focus and time, but if you’ve got those resources, you can get it done! There are plenty of skilled computer programmers today who didn’t go to college to learn to code. A of these folks had other cards up their sleves, like computers at home and had been working with computer code since middle or high school. For the most part, they had some serious resources, but today, those resources are more widely available, you just need to know how to find them.&lt;/p&gt;
+&lt;p&gt;Teaching yourself how to code is hard. It takes a good deal of effort, focus and time, but if you have got those resources, you can get it done! There are plenty of skilled computer programmers today who did not go to college to learn to code. A of these folks had other cards up their sleves, like computers at home and had been working with computer code since middle or high school. For the most part, they had some serious resources, but today, those resources are more widely available, you just need to know how to find them.&lt;/p&gt;
 
 &lt;h4 id=&quot;the-tool-you-need&quot;&gt;The Tool You Need&lt;/h4&gt;
 
-&lt;p&gt;Today, for ~$200-400 USD you can get a pretty good programming computer. I recommend looking for pre-built laptops with ~4 gigs of Ram and ~2.4GHz processing speed. I wouldn’t feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.&lt;/p&gt;
+&lt;p&gt;Today, for ~$200-400 USD you can get a pretty good programming computer. I recommend looking for pre-built laptops with ~4 gigs of Ram and ~2.4GHz processing speed. I would not feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.&lt;/p&gt;
 
 &lt;h4 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h4&gt;
 
@@ -93,11 +344,11 @@
 
 &lt;p&gt;The most important step after learning how to use a language is to build something yourself. You can build Amazon for Rocks or Pinterest for shoes. It doesn’t have to be practical, but you need to create something to hone your skills and plug in the gaps between the tutorials and what is practical. You’ll learn about cacheing, new Javascript frameworks like AngularJS and a ton of other important materials to really build something great.&lt;/p&gt;
 
-&lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you the basics. I have heard them scoffed at before, but I personally think they are legit. If you study and learn the material, whether it’s from a course, tutorials or a bootcamp you have it. There is not much else to it.&lt;/p&gt;
+&lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you to code quickly and push you to work hard well. I have heard them scoffed at before, but I personally think they are a viable resource. If you study and learn the material, whether it’s from a course, tutorials or a bootcamp you have it. There is not much else to it.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 30 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/30/beginning-self-instructed-cs/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/30/beginning-self-instructed-cs/</guid>
+        <pubDate>Mon, 13 Jun 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/06/13/beginning-self-instructed-cs/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/06/13/beginning-self-instructed-cs/</guid>
         
         <category>Instruction</category>
         
@@ -184,9 +435,9 @@
   &lt;li&gt;The $ denotes using the terminal aka console to type this code. You’ll see it a lot while your programming, but for me on day 1, I didn’t understand it.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 23 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/23/how-to-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/23/how-to-create-a-jekyll-blog/</guid>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/06/06/how-to-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/06/06/how-to-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -264,9 +515,9 @@
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 16 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/16/why-use-jekyll-to-create-a-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/16/why-use-jekyll-to-create-a-blog/</guid>
+        <pubDate>Mon, 30 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/30/why-use-jekyll-to-create-a-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/30/why-use-jekyll-to-create-a-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -304,9 +555,9 @@
 
 &lt;p&gt;Everyone with a technical blog is just like you and me. They took the intiative at some point, and their skills grew with them to the extent that now we can all use their posts and a resource for our own growth.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 09 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/09/why-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/09/why-create-a-jekyll-blog/</guid>
+        <pubDate>Mon, 23 May 2016 00:00:00 -0700</pubDate>
+        <link>https://www.mikepotato.com/2016/05/23/why-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/23/why-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         

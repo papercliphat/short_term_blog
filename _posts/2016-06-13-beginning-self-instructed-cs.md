@@ -8,7 +8,7 @@ tags: Instruction Free OpenCourseWare
 * content
 {:toc}
 
-Teaching yourself how to code is hard. It takes a good deal of effort, focus and time, but if you've got those resources, you can get it done! There are plenty of skilled computer programmers today who didn't go to college to learn to code. A of these folks had other cards up their sleves, like computers at home and had been working with computer code since middle or high school. For the most part, they had some serious resources, but today, those resources are more widely available, you just need to know how to find them.
+Teaching yourself how to code is hard. It takes a good deal of effort, focus and time, but if you have got those resources, you can get it done! There are plenty of skilled computer programmers today who did not go to college to learn to code. A of these folks had other cards up their sleves, like computers at home and had been working with computer code since middle or high school. For the most part, they had some serious resources, but today, those resources are more widely available, you just need to know how to find them.
 
 
 
@@ -16,7 +16,7 @@ Teaching yourself how to code is hard. It takes a good deal of effort, focus and
 
 #### The Tool You Need
 
-Today, for ~$200-400 USD you can get a pretty good programming computer. I recommend looking for pre-built laptops with ~4 gigs of Ram and ~2.4GHz processing speed. I wouldn't feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.
+Today, for ~$200-400 USD you can get a pretty good programming computer. I recommend looking for pre-built laptops with ~4 gigs of Ram and ~2.4GHz processing speed. I would not feel comfortable going below this. You could, and people work with less, but this is where I feel comfortable making a recommendation.
 
 
 #### Getting Started
@@ -75,4 +75,4 @@ The most important step after learning how to use a language is to build somethi
 
 
 
-Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you the basics. I have heard them scoffed at before, but I personally think they are legit. If you study and learn the material, whether it's from a course, tutorials or a bootcamp you have it. There is not much else to it.
+Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you to code quickly and push you to work hard well. I have heard them scoffed at before, but I personally think they are a viable resource. If you study and learn the material, whether it's from a course, tutorials or a bootcamp you have it. There is not much else to it.
