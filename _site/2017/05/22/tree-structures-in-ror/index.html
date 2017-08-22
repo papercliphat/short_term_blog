@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Seeding a Database</title>
-    <meta name="description" content="I wanted to make a series of posts detailing various types of tree structures to organize data logically, but thought it would be too early without an explan...">
+    <title>Tree Structures in Ror</title>
+    <meta name="description" content="Types of tree structuresgems to solve themimplementation of those gemsSplit the 4-5 types of trees into different groupsAnother idea is a write up on securit...">
 
 
     <link rel="stylesheet" href=" /css/fontawesome/css/font-awesome.min.css ">
     <link rel="stylesheet" href=" /css/main.css ">
-    <link rel="canonical" href="http://localhost:4000/2016/07/07/seeding-a-database/">
+    <link rel="canonical" href="http://localhost:4000/2017/05/22/tree-structures-in-ror/">
     <link rel="alternate" type="application/rss+xml" title="Mike Porter" href="http://localhost:4000 /feed.xml ">
 
 
@@ -55,11 +55,11 @@
 
         <div class="page clearfix" post>
     <div class="left">
-        <h1>Seeding a Database</h1>
+        <h1>Tree Structures in Ror</h1>
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>2016-07-07
+                <i class="fa fa-calendar"></i>2017-05-22
             </div>
 
             <div class="label-card">
@@ -79,7 +79,7 @@
   <i class="fa fa-th-list"></i>
   
     
-        <a href="/category/#OpenCourseWare" title="Category: OpenCourseWare" rel="category">OpenCourseWare</a>
+        <a href="/category/#Ruby" title="Category: Ruby" rel="category">Ruby</a>
     
   
 
@@ -99,11 +99,11 @@
         <!--a href="/tag/#Instruction" title="Tag: Instruction" rel="tag">Instruction</a-->
         <a href="/tag/#Instruction" title="Tag: Instruction" rel="tag">Instruction</a>&nbsp;
     
-        <!--a href="/tag/#Seeding" title="Tag: Seeding" rel="tag">Seeding</a-->
-        <a href="/tag/#Seeding" title="Tag: Seeding" rel="tag">Seeding</a>&nbsp;
+        <!--a href="/tag/#Trees" title="Tag: Trees" rel="tag">Trees</a-->
+        <a href="/tag/#Trees" title="Tag: Trees" rel="tag">Trees</a>&nbsp;
     
-        <!--a href="/tag/#Rails" title="Tag: Rails" rel="tag">Rails</a-->
-        <a href="/tag/#Rails" title="Tag: Rails" rel="tag">Rails</a>
+        <!--a href="/tag/#RoR" title="Tag: RoR" rel="tag">RoR</a-->
+        <a href="/tag/#RoR" title="Tag: RoR" rel="tag">RoR</a>
     
   
 
@@ -114,101 +114,20 @@
         </div>
         <hr>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-        <ul id="markdown-toc">
-  <li><a href="#how-seeding-works" id="markdown-toc-how-seeding-works">How Seeding Works</a>    <ul>
-      <li><a href="#faker" id="markdown-toc-faker">Faker</a></li>
-      <li><a href="#fixtures" id="markdown-toc-fixtures">Fixtures</a></li>
-    </ul>
-  </li>
-</ul>
+        
+<p>Types of tree structures</p>
 
-<p>I wanted to make a series of posts detailing various types of tree structures to organize data logically, but thought it would be too early without an explanation on seeding your database. Seeding a database is a basic tool we can use to add data to a database. It would be nuts to build an application without seeing where data goes and how it fits. Gems like faker are great tools to populate data automatically. I will also go into a bit about fixtures and the rake command.</p>
+<p>gems to solve them</p>
 
-<h4 id="how-seeding-works">How Seeding Works</h4>
+<p>implementation of those gems</p>
 
-<p>Seeding a database is a piece of cake. Just open up <code class="highlighter-rouge">db/seeds.rb</code> and treat it like a normal ruby program in the rails environment. I am going to use a tree to organize some phylogenetic biology data. If you do not remember, those are the trees used to organize living things. So for an amoeba, which is that funky blog like micro-organism we would have:</p>
+<p>Split the 4-5 types of trees into different groups</p>
 
-<blockquote>
-  <p>Eukaryota &gt; Amoebozoa &gt; Tubulinea &gt; Loboda &gt; Tubulinda &gt; Amoebidae &gt; Amoeba &gt; Proteus</p>
-</blockquote>
+<p>Another idea is a write up on security</p>
 
-<p>This is complex, and hard for us to read, so I will just make up some simple data that goes one or two levels down. We’ll have a broad category of Animals, Plants and Micro-organisms. Animals will be subdivided into Reptiles, Birds and Fish. Plants will be subdivided Flowering and Non-flowering, and Micro-organisms won’t have any subdivisions at all. How you organize this data is the subject of the tree structure series, but we do have a bunch of names. So let’s seed a database of names.</p>
+<p>Write on how to avoid x security measure</p>
 
-<p>First we need to generate our model in Rails</p>
-
-<blockquote>
-  <p>$ rails g model Tree name:string</p>
-</blockquote>
-
-<blockquote>
-  <p>$ rake db:migrate</p>
-</blockquote>
-
-<p>Then we add some data!</p>
-
-<p>db/seeds.rb</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>tree_list = [
-
-  "Animals",
-  "Plants",
-  "Micro-organisms",
-  "Reptiles",
-  "Birds",
-  "Fish",
-  "Gecko",
-  "Alligator",
-  "Iguana",
-  "Chicken",
-  "Blue Jay",
-  "Shark",
-  "Tuna",
-  "Dog Fish",
-  "Catfish",
-  "Amoeba",
-  "Algae",
-  "Phytoplankton",
-  ]
-
-tree_list.each do |phylum|
-  Tree.create( name: phylum )
-end
-</code></pre>
-</div>
-
-<p>Then we seed the db with</p>
-
-<blockquote>
-  <p>$ rails db:seed</p>
-</blockquote>
-
-<p>Pretty simple, all we’re doing is writing out some strings, and throwing them in a dot each do. But this took me a few mintues. I could not think of these all quickly, and did not want funky data. Like where would Whales go? I did not leave room for those. Micro-organisms was also Bacteria, until I realized I did not know any bacteria off the top of my head.</p>
-
-<h6 id="faker">Faker</h6>
-
-<p>In many common instances should save ourself some trouble and use Faker. We cannot get the same logic we could in our made up data, but we can create all sorts of things like addresses, names and universities.</p>
-
-<blockquote>
-  <p>$ gem install faker</p>
-</blockquote>
-
-<blockquote>
-  <p>$ bundle install</p>
-</blockquote>
-
-<p>Open up db/seeds.rb</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>99.times do |n|
-  name  = Faker::Name.name
-  Tree.create!(name:  name)
-end
-</code></pre>
-</div>
-
-<h6 id="fixtures">Fixtures</h6>
-
-<p>While we are on the subject of creating dummy data, fixtures are used to create dummy data for testing. One of the more prominent gems is factory_girl_rails.</p>
-
+<p>cross site scripting</p>
 
         </article>
         <hr>
@@ -222,36 +141,46 @@ end
                     
                 
                     
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
                         
                         <h2 id="similar_posts">Similar Posts</h2>
                         <ul>
                         
                         <li class="relatedPost">
-                            <a href="http://localhost:4000/2017/06/20/adjacency-list-tree/">Adjacency Tree Rails
-                            
-                            </a>
-                        </li>
-                        
-                        
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-        
-            
-            
-                
-                    
-                        
-                        <li class="relatedPost">
-                            <a href="http://localhost:4000/2017/05/22/tree-structures-in-ror/">Tree Structures in Ror
+                            <a href="http://localhost:4000/2016/07/07/seeding-a-database/">Seeding a Database
                             
                             </a>
                         </li>
@@ -263,25 +192,6 @@ end
                 
                     
                 
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-                
-                    
-                
-                    
-                
-                    
-                
-            
-        
-            
             
                 
                     

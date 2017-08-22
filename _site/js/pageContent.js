@@ -6,7 +6,7 @@
  * 反之，取消样式
  */
 (function() {
-    if (window.innerWidth > 770) {
+    if (window.innerWidth > 770) {d
 
         var sidebarWrap = document.querySelector('.right>.wrap')
 
