@@ -3,10 +3,10 @@
   <channel>
     <title>Mike Porter</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Aug 2017 18:15:17 -0700</pubDate>
-    <lastBuildDate>Mon, 21 Aug 2017 18:15:17 -0700</lastBuildDate>
+    <link>http://localhost:3000/</link>
+    <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 22 Aug 2017 10:44:27 -0700</pubDate>
+    <lastBuildDate>Tue, 22 Aug 2017 10:44:27 -0700</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -19,8 +19,8 @@
 &lt;p&gt;Even&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Jun 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2017/06/20/adjacency-list-tree/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/20/adjacency-list-tree/</guid>
+        <link>http://localhost:3000/2017/06/20/adjacency-list-tree/</link>
+        <guid isPermaLink="true">http://localhost:3000/2017/06/20/adjacency-list-tree/</guid>
         
         <category>Rails</category>
         
@@ -49,8 +49,8 @@
 &lt;p&gt;cross site scripting&lt;/p&gt;
 </description>
         <pubDate>Mon, 22 May 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2017/05/22/tree-structures-in-ror/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/22/tree-structures-in-ror/</guid>
+        <link>http://localhost:3000/2017/05/22/tree-structures-in-ror/</link>
+        <guid isPermaLink="true">http://localhost:3000/2017/05/22/tree-structures-in-ror/</guid>
         
         <category>Instruction</category>
         
@@ -189,8 +189,8 @@ s3_bucket: example.com
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 09 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/07/09/hosting-jekyll-on-aws/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/07/09/hosting-jekyll-on-aws/</guid>
+        <link>http://localhost:3000/2016/07/09/hosting-jekyll-on-aws/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/07/09/hosting-jekyll-on-aws/</guid>
         
         <category>Jekyll</category>
         
@@ -300,8 +300,8 @@ end
 
 </description>
         <pubDate>Thu, 07 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/07/07/seeding-a-database/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/07/07/seeding-a-database/</guid>
+        <link>http://localhost:3000/2016/07/07/seeding-a-database/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/07/07/seeding-a-database/</guid>
         
         <category>Instruction</category>
         
@@ -401,8 +401,8 @@ end
 &lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you to code quickly and push you to work hard well. I have heard them scoffed at before, but I personally think they are a viable resource. If you study and learn the material, whether it’s from a course, tutorials or a bootcamp you have it. There is not much else to it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/06/13/beginning-self-instructed-cs/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/13/beginning-self-instructed-cs/</guid>
+        <link>http://localhost:3000/2016/06/13/beginning-self-instructed-cs/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/06/13/beginning-self-instructed-cs/</guid>
         
         <category>Instruction</category>
         
@@ -490,8 +490,8 @@ end
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/06/06/how-to-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/06/how-to-create-a-jekyll-blog/</guid>
+        <link>http://localhost:3000/2016/06/06/how-to-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/06/06/how-to-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -570,8 +570,8 @@ end
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 30 May 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/05/30/why-use-jekyll-to-create-a-blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/30/why-use-jekyll-to-create-a-blog/</guid>
+        <link>http://localhost:3000/2016/05/30/why-use-jekyll-to-create-a-blog/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/05/30/why-use-jekyll-to-create-a-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -610,8 +610,8 @@ end
 &lt;p&gt;Everyone with a technical blog is just like you and me. They took the intiative at some point, and their skills grew with them to the extent that now we can all use their posts and a resource for our own growth.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 May 2016 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2016/05/23/why-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/23/why-create-a-jekyll-blog/</guid>
+        <link>http://localhost:3000/2016/05/23/why-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:3000/2016/05/23/why-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
