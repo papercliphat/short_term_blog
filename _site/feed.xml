@@ -3,11 +3,65 @@
   <channel>
     <title>Mike Porter</title>
     <description></description>
-    <link>https://www.mikepotato.com/</link>
-    <atom:link href="https://www.mikepotato.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jul 2016 19:33:40 -0700</pubDate>
-    <lastBuildDate>Tue, 19 Jul 2016 19:33:40 -0700</lastBuildDate>
-    <generator>Jekyll v3.1.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 21 Aug 2017 18:15:17 -0700</pubDate>
+    <lastBuildDate>Mon, 21 Aug 2017 18:15:17 -0700</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Adjacency Tree Rails</title>
+        <description>
+&lt;hr /&gt;
+
+&lt;p&gt;Trees are a great way to organize your data logically and allow for user browsing! The heirarchy is so simple, logical, and useful that we see tree structures all over websites today. Comments, products, pictures, and even our folders are tree structures. I’m going to walk through the different trees, include their pros and cons, and implement them all with the same dataset. The trees will include an Adjacency List, Nested Sets, Path Enumeration, and a Closure table. All these trees have gems, I will start with the gem, then in the next installment give a more detailed walk through.&lt;/p&gt;
+
+&lt;p&gt;Even&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2017/06/20/adjacency-list-tree/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/20/adjacency-list-tree/</guid>
+        
+        <category>Rails</category>
+        
+        <category>Tree</category>
+        
+        
+        <category>Tree</category>
+        
+      </item>
+    
+      <item>
+        <title>Tree Structures in Ror</title>
+        <description>
+&lt;p&gt;Types of tree structures&lt;/p&gt;
+
+&lt;p&gt;gems to solve them&lt;/p&gt;
+
+&lt;p&gt;implementation of those gems&lt;/p&gt;
+
+&lt;p&gt;Split the 4-5 types of trees into different groups&lt;/p&gt;
+
+&lt;p&gt;Another idea is a write up on security&lt;/p&gt;
+
+&lt;p&gt;Write on how to avoid x security measure&lt;/p&gt;
+
+&lt;p&gt;cross site scripting&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 May 2017 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/2017/05/22/tree-structures-in-ror/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/22/tree-structures-in-ror/</guid>
+        
+        <category>Instruction</category>
+        
+        <category>Trees</category>
+        
+        <category>RoR</category>
+        
+        
+        <category>Ruby</category>
+        
+      </item>
     
       <item>
         <title>Hosting Jekyll on AWS</title>
@@ -16,9 +70,9 @@
       &lt;li&gt;&lt;a href=&quot;#using-your-domain-name-with-another-host&quot; id=&quot;markdown-toc-using-your-domain-name-with-another-host&quot;&gt;Using Your Domain Name with Another Host&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#using-s3website-to-host&quot; id=&quot;markdown-toc-using-s3website-to-host&quot;&gt;Using S3_website to Host&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#using-s3_website-to-host&quot; id=&quot;markdown-toc-using-s3_website-to-host&quot;&gt;Using S3_website to Host&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#set-up-s3-buckets&quot; id=&quot;markdown-toc-set-up-s3-buckets&quot;&gt;Set Up S3 Buckets&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#using-s3website-gem&quot; id=&quot;markdown-toc-using-s3website-gem&quot;&gt;Using s3_website gem&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#using-s3_website-gem&quot; id=&quot;markdown-toc-using-s3_website-gem&quot;&gt;Using s3_website gem&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -49,7 +103,7 @@
 
 &lt;p&gt;For GoDaddy you need to migrate to My products, then in domains click manage, then there is a gear pull down for each domain. We are going to use that to navigate to Manage DNS. Here we chage our nameservers to custom and include our 4 from route 53.&lt;/p&gt;
 
-&lt;h4 id=&quot;using-s3website-to-host&quot;&gt;Using S3_website to Host&lt;/h4&gt;
+&lt;h4 id=&quot;using-s3_website-to-host&quot;&gt;Using S3_website to Host&lt;/h4&gt;
 
 &lt;h6 id=&quot;set-up-s3-buckets&quot;&gt;Set Up S3 Buckets&lt;/h6&gt;
 
@@ -92,7 +146,7 @@
 
 &lt;p&gt;Just like before replace example.com with your domain name.&lt;/p&gt;
 
-&lt;h6 id=&quot;using-s3website-gem&quot;&gt;Using s3_website gem&lt;/h6&gt;
+&lt;h6 id=&quot;using-s3_website-gem&quot;&gt;Using s3_website gem&lt;/h6&gt;
 
 &lt;p&gt;The instructions linked to above from amazon are cumbersome. There are a lot of steps to set up a static website, that we can avoid by using &lt;a href=&quot;https://github.com/laurilehmijoki/s3_website&quot;&gt;s3_website gem&lt;/a&gt;! First we need to install the gem&lt;/p&gt;
 
@@ -135,8 +189,8 @@ s3_bucket: example.com
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 09 Jul 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/07/09/hosting-jekyll-on-aws/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/07/09/hosting-jekyll-on-aws/</guid>
+        <link>http://localhost:4000/2016/07/09/hosting-jekyll-on-aws/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/09/hosting-jekyll-on-aws/</guid>
         
         <category>Jekyll</category>
         
@@ -246,8 +300,8 @@ end
 
 </description>
         <pubDate>Thu, 07 Jul 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/07/07/seeding-a-database/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/07/07/seeding-a-database/</guid>
+        <link>http://localhost:4000/2016/07/07/seeding-a-database/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/07/seeding-a-database/</guid>
         
         <category>Instruction</category>
         
@@ -294,7 +348,7 @@ end
 
 &lt;h4 id=&quot;cs50-at-harvard&quot;&gt;CS50 at Harvard.&lt;/h4&gt;
 
-&lt;p&gt;This is the best course I have ever taken. The introduction to computer programming course, &lt;a href=&quot;https://cs50.harvard.edu/&quot;&gt;CS50&lt;/a&gt;, is eye opening. They teach you the basics very well, it&#39;s all set up in a nice package. There is a wealth of material including lectures and TA sections where they teach you everything you need to know. It also feels very supportive. They have worked hard to get the class online and working well. A lot of people worldwide are taking it and it has expanded to include Yale too. If you take it while the actual course is going on, you get a ton of addional educational resources too! But don&#39;t let that stop you from getting started now.&lt;/p&gt;
+&lt;p&gt;This is the best course I have ever taken. The introduction to computer programming course, &lt;a href=&quot;https://cs50.harvard.edu/&quot;&gt;CS50&lt;/a&gt;, is eye opening. They teach you the basics very well, it's all set up in a nice package. There is a wealth of material including lectures and TA sections where they teach you everything you need to know. It also feels very supportive. They have worked hard to get the class online and working well. A lot of people worldwide are taking it and it has expanded to include Yale too. If you take it while the actual course is going on, you get a ton of addional educational resources too! But don't let that stop you from getting started now.&lt;/p&gt;
 
 &lt;p&gt;CS50 mostly works in C/C++ with a bit of PHP/Javascript, but they cover the basics well and the concepts underlying web and phone app development.&lt;/p&gt;
 
@@ -336,7 +390,7 @@ end
 
 &lt;h6 id=&quot;rubyror-online-resources&quot;&gt;Ruby/RoR online resources&lt;/h6&gt;
 
-&lt;p&gt;If you want to learn how to use Ruby on your own there are quite a few resources. I would start with the free &lt;a href=&quot;tryruby.org&quot;&gt;Try Ruby&lt;/a&gt; Tutorial, then do the &lt;a href=&quot;railsforzombies.org&quot;&gt;Rails for Zombies&lt;/a&gt; tutorial. I would then start with Michael Hartl&#39;s &lt;a href=&quot;https://www.railstutorial.org/&quot;&gt;tutorial&lt;/a&gt;. Hartl does a great job exaplining the basics. To finish off the beginning stages I would now begin with the &lt;a href=&quot;guides.rubyonrails.org&quot;&gt;Ruby on Rails guides&lt;/a&gt;. When I was a novice programmer, I wish I had gone through the work in this order. Reading the Rails guides was a bit more than I was ready for before working through Hartl&#39;s tutorial, and having a bit of time to juice up some Ruby/RoR in Try Ruby and Zombies was of great help.&lt;/p&gt;
+&lt;p&gt;If you want to learn how to use Ruby on your own there are quite a few resources. I would start with the free &lt;a href=&quot;tryruby.org&quot;&gt;Try Ruby&lt;/a&gt; Tutorial, then do the &lt;a href=&quot;railsforzombies.org&quot;&gt;Rails for Zombies&lt;/a&gt; tutorial. I would then start with Michael Hartl's &lt;a href=&quot;https://www.railstutorial.org/&quot;&gt;tutorial&lt;/a&gt;. Hartl does a great job exaplining the basics. To finish off the beginning stages I would now begin with the &lt;a href=&quot;guides.rubyonrails.org&quot;&gt;Ruby on Rails guides&lt;/a&gt;. When I was a novice programmer, I wish I had gone through the work in this order. Reading the Rails guides was a bit more than I was ready for before working through Hartl's tutorial, and having a bit of time to juice up some Ruby/RoR in Try Ruby and Zombies was of great help.&lt;/p&gt;
 
 &lt;p&gt;(There are Rails web dev courses available, and Stanford has a course now focusing on a MEAN stack.)&lt;/p&gt;
 
@@ -347,8 +401,8 @@ end
 &lt;p&gt;Today there is plenty of information regarding programming on the web. You can choose a language and take tutorials, but there are also bootcamps in every major city that teach you to code quickly and push you to work hard well. I have heard them scoffed at before, but I personally think they are a viable resource. If you study and learn the material, whether it’s from a course, tutorials or a bootcamp you have it. There is not much else to it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 13 Jun 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/06/13/beginning-self-instructed-cs/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/06/13/beginning-self-instructed-cs/</guid>
+        <link>http://localhost:4000/2016/06/13/beginning-self-instructed-cs/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/13/beginning-self-instructed-cs/</guid>
         
         <category>Instruction</category>
         
@@ -373,7 +427,7 @@ end
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;This is less than an expansive How To, and more of a let me point you exactly to the resources you need and explain why or how that resource is important. I&#39;ll throw in ways you can make an identical site to mine. If you&#39;ve never built anything in Jekyll it&#39;s helpful to have a step-wise guide on how to proceed.&lt;/p&gt;
+&lt;p&gt;This is less than an expansive How To, and more of a let me point you exactly to the resources you need and explain why or how that resource is important. I'll throw in ways you can make an identical site to mine. If you've never built anything in Jekyll it's helpful to have a step-wise guide on how to proceed.&lt;/p&gt;
 
 &lt;h4 id=&quot;install-ruby&quot;&gt;Install Ruby&lt;/h4&gt;
 
@@ -383,7 +437,7 @@ end
 
 &lt;p&gt;Warning: Ruby runs best on Ubuntu(Linux) and Mac. I’ve played with it in Fedora(Linux) and it wasn’t as easy to install for me. It will install in windows, but there are some issues with running Ruby on Rails and… I think Javascript frameworks. I actually use a Windows PC with a virtual machine set up through VMware.&lt;/p&gt;
 
-&lt;p&gt;I used RVM (Ruby Version Manager) to both manage and install Ruby. I&#39;ve never actually needed to use a specific Ruby version, which is their touted feature, but it was the easiest way to install Ruby on my system. We can visit &lt;a href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM’s official site&lt;/a&gt; for detailed instructions.&lt;/p&gt;
+&lt;p&gt;I used RVM (Ruby Version Manager) to both manage and install Ruby. I've never actually needed to use a specific Ruby version, which is their touted feature, but it was the easiest way to install Ruby on my system. We can visit &lt;a href=&quot;https://rvm.io/rvm/install&quot;&gt;RVM’s official site&lt;/a&gt; for detailed instructions.&lt;/p&gt;
 
 &lt;p&gt;For additional help do a google search - something like “install ruby windows 10” or “install ruby fedora”, but be ready to wrestle with set up technical issues.&lt;/p&gt;
 
@@ -411,13 +465,13 @@ end
 
 &lt;p&gt;Then go to http://localhost:4000 in your browser&lt;/p&gt;
 
-&lt;p&gt;The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it&#39;s a worthwhile read.&lt;/p&gt;
+&lt;p&gt;The Jekyll website has all the information you need to get started writing posts, additional pages, linking, etc., so it's a worthwhile read.&lt;/p&gt;
 
 &lt;h4 id=&quot;a-few-pointers&quot;&gt;A Few Pointers&lt;/h4&gt;
 
-&lt;p&gt;Out of the box Jekyll comes with a simple some HTML and CSS included. If you don&#39;t like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.&lt;/p&gt;
+&lt;p&gt;Out of the box Jekyll comes with a simple some HTML and CSS included. If you don't like the appearance or want additional features consider exploring Jekyll Themes or Jekyll Templates with a quick google search.&lt;/p&gt;
 
-&lt;p&gt;I something from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;, which is an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt;. I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;https://github.com/Gaohaoyang/gaohaoyang.github.io&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It&#39;s not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers. But spend some time exploring on your own for ideas you can build on.&lt;/p&gt;
+&lt;p&gt;I something from &lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll theme&lt;/a&gt;, which is an aggregation site. I was a fan of both &lt;a href=&quot;http://jekyllthemes.org/themes/yellowblue/&quot;&gt;Yellow Blue&lt;/a&gt; and &lt;a href=&quot;http://jekyllthemes.org/themes/wiki-blog/&quot;&gt;WikiBlog&lt;/a&gt;. I wanted something with Categories and Tags included on the sidebar, and WikiBlog actually linked me to &lt;a href=&quot;https://github.com/Gaohaoyang/gaohaoyang.github.io&quot;&gt;Concise-high-end Theme&lt;/a&gt;. It's not in English, but I cleaned it up a little and removed some features to make it more to my liking. I have included a blank template in my &lt;a href=&quot;https://github.com/papercliphat/concise_theme_jekyll&quot;&gt;github&lt;/a&gt; for English speakers. But spend some time exploring on your own for ideas you can build on.&lt;/p&gt;
 
 &lt;h5 id=&quot;caveats-of-concise-high-end-theme&quot;&gt;Caveats of Concise-high-end Theme&lt;/h5&gt;
 
@@ -425,7 +479,7 @@ end
 
 &lt;p&gt;To utilize the excerpt of the full blog page, keep 4 empty rows between the excerpt and the main body of the content.&lt;/p&gt;
 
-&lt;p&gt;You&#39;ll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;Jekyll site&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You'll have to install the Jekyll pagination gem or you will get an error for that too! Instructions can be found on the &lt;a href=&quot;https://jekyllrb.com/docs/pagination/&quot;&gt;Jekyll site&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Pagination limits the number of posts that appear on a page. If you want to add comments, your best bet is disquis, which requires registration and was a bit too much hassle for me. If you want comments, a “disquis jekyll” google search will send you to a ton of videos and guides to assist.&lt;/p&gt;
 
@@ -436,8 +490,8 @@ end
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 06 Jun 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/06/06/how-to-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/06/06/how-to-create-a-jekyll-blog/</guid>
+        <link>http://localhost:4000/2016/06/06/how-to-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/06/how-to-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -463,11 +517,11 @@ end
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Jekyll is a static site generator written in Ruby. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn&#39;t require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. The assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming&lt;sup&gt;1&lt;/sup&gt; to easily and rapidly make changes to our application.&lt;/p&gt;
+&lt;p&gt;Jekyll is a static site generator written in Ruby. That means you can use it for blogs, business websites and anything else you can imagine that mostly doesn't require a database. It takes dynamic content like templates and markdown and assembles that content into a static application. The assembled static application is what gets put on the web. Using this method we can take advantage of paradigms in programming&lt;sup&gt;1&lt;/sup&gt; to easily and rapidly make changes to our application.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-pros&quot;&gt;The Pros&lt;/h3&gt;
 
-&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box&lt;sup&gt;2&lt;/sup&gt;. Additionally, because it&#39;s so simple, it&#39;s fairly easy to optimize code for speed and efficiency.&lt;/p&gt;
+&lt;p&gt;Jekyll is pitched and touted as being very minimalistic and very efficient. It has only what you need to generate a basic static site. Everything else you have add via plugins. The benefits to this approach are that Jekyll is very fast, very secure and very cheap right out of the box&lt;sup&gt;2&lt;/sup&gt;. Additionally, because it's so simple, it's fairly easy to optimize code for speed and efficiency.&lt;/p&gt;
 
 &lt;p&gt;If you need log-in, extensive commenting, photo hosting or hosting any type of data you should definitely move out of Jekyll and into a webapp framework that supports databases like Ruby on Rails, PHP, or Python to name a new.&lt;/p&gt;
 
@@ -475,19 +529,19 @@ end
 
 &lt;p&gt;I consider these inconveniences inherent in the type of framework Jekyll is, but with enough inconveniences, we get a bit unhappy.&lt;/p&gt;
 
-&lt;p&gt;Photos and media have to be inserted manually. With some sites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn&#39;t have that, so if we&#39;ve got a dozen photos per post, it might be a good idea to consider switching.&lt;/p&gt;
+&lt;p&gt;Photos and media have to be inserted manually. With some sites like Wordpress, there is a nice interface to easily add this kind of data. Jekyll doesn't have that, so if we've got a dozen photos per post, it might be a good idea to consider switching.&lt;/p&gt;
 
-&lt;p&gt;SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don&#39;t use them. For me, this is more of a personal body of work blog, and I don&#39;t think it would be an optimal use of my time.&lt;/p&gt;
+&lt;p&gt;SEO optimization generally has to be done manually. SEO optimization gets webapp pages hitting higher on unpaid search results. There are a lot of factors to take into consideration, but generally optimization relies on good keywords, inter-application cross-linking and easy social network sharing. There are some Jekyll plug ins that help, but I don't use them. For me, this is more of a personal body of work blog, and I don't think it would be an optimal use of my time.&lt;/p&gt;
 
-&lt;p&gt;Jekyll only works on computers where you are “set-up”. So if you&#39;ve got a laptop you do most of your work on, and a light weight underpowered mini-laptop for traveling, you would likely find it difficult to update or edit your website on the road.&lt;/p&gt;
+&lt;p&gt;Jekyll only works on computers where you are “set-up”. So if you've got a laptop you do most of your work on, and a light weight underpowered mini-laptop for traveling, you would likely find it difficult to update or edit your website on the road.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-competition&quot;&gt;The Competition&lt;/h3&gt;
 
 &lt;h4 id=&quot;wordpress&quot;&gt;Wordpress&lt;/h4&gt;
 
-&lt;p&gt;Today, the biggest webapp framework is definitely Wordpress. A lot of folks knock it for it&#39;s resource use, but it&#39;s huge strength is in it&#39;s interface. Anyone can easily create a website on wordpress with virtually no programming knowledge. Additionally, the more difficult to do things like handling database log-ins and tarnsactions can be done with plugins. It&#39;s really easy to use and you can find a TON of sites that use Wordpress like The New York Times.&lt;/p&gt;
+&lt;p&gt;Today, the biggest webapp framework is definitely Wordpress. A lot of folks knock it for it's resource use, but it's huge strength is in it's interface. Anyone can easily create a website on wordpress with virtually no programming knowledge. Additionally, the more difficult to do things like handling database log-ins and tarnsactions can be done with plugins. It's really easy to use and you can find a TON of sites that use Wordpress like The New York Times.&lt;/p&gt;
 
-&lt;p&gt;Wordpress works out of a browser and it has a simple editing system, but it is slower. It&#39;s also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, and popularity there is also got a malware situation. Malware might get inserted into your site if you aren&#39;t constantly updating, and then you might run into anti-viruses programs warning users of your site, loss of users trust and possibly SEO de-optimization&lt;sup&gt;3&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Wordpress works out of a browser and it has a simple editing system, but it is slower. It's also more prone to crashes and MUST be continuously updated. Security holes in plugins are constantly being found and updated. Because of these security holes, and popularity there is also got a malware situation. Malware might get inserted into your site if you aren't constantly updating, and then you might run into anti-viruses programs warning users of your site, loss of users trust and possibly SEO de-optimization&lt;sup&gt;3&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;alternative-popular-static-site-generators&quot;&gt;Alternative Popular Static Site Generators&lt;/h4&gt;
 
@@ -495,29 +549,29 @@ end
 
 &lt;p&gt;Roots - Node.js based, built by Carrot which is a subsidiary of the Vice Media Group.&lt;/p&gt;
 
-&lt;p&gt;Hugo - Written in GO. I&#39;ve been hearing a lot of love for Hugo, but it might be because it&#39;s the new kid on the block.&lt;/p&gt;
+&lt;p&gt;Hugo - Written in GO. I've been hearing a lot of love for Hugo, but it might be because it's the new kid on the block.&lt;/p&gt;
 
-&lt;p&gt;If you are having trouble choosing a Static Site Generator and don&#39;t don&#39;t have any coding experience I&#39;d just pick Jekyll or Wordpress. It&#39;s more important to get started and work through the fundamentals, than spending significant time researching for very small gains. The larger frameworks also have more tutorials, guides, plug-ins and overall resources at your disposal.&lt;/p&gt;
+&lt;p&gt;If you are having trouble choosing a Static Site Generator and don't don't have any coding experience I'd just pick Jekyll or Wordpress. It's more important to get started and work through the fundamentals, than spending significant time researching for very small gains. The larger frameworks also have more tutorials, guides, plug-ins and overall resources at your disposal.&lt;/p&gt;
 
-&lt;p&gt;If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn&#39;t have any trouble finding tutorials to get you started.&lt;/p&gt;
+&lt;p&gt;If you do have skill in Node.js, GO or another language you should definitely use the static site generator in that language. With a quick google search you can find a framework that supports your language of choice. Additionally, you shouldn't have any trouble finding tutorials to get you started.&lt;/p&gt;
 
 &lt;h5 id=&quot;footnotes&quot;&gt;Footnotes:&lt;/h5&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Paradigms include things like DRY - Don&#39;t repeat yourself. If you are repeating yourself over several sections, and you decide to make a change, you now have to make this change over several sections. This is both error prone (typos) and time consuming.&lt;/p&gt;
+    &lt;p&gt;Paradigms include things like DRY - Don't repeat yourself. If you are repeating yourself over several sections, and you decide to make a change, you now have to make this change over several sections. This is both error prone (typos) and time consuming.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Becuase we have no communication between databases we are fast. We are just pulling up already prepared data quickly. Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it&#39;s hosted, there isn&#39;t much to change. It&#39;s often the ability to be dynamic that presents security holes. With no databse, Jekyll is small and light. That means cheap. It also means we aren&#39;t sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.&lt;/p&gt;
+    &lt;p&gt;Becuase we have no communication between databases we are fast. We are just pulling up already prepared data quickly. Jekyll comes out of the box without plugins, which may be a source of continuous updating to patch security holes. Additionally, because Jekyll is already prepared when it's hosted, there isn't much to change. It's often the ability to be dynamic that presents security holes. With no databse, Jekyll is small and light. That means cheap. It also means we aren't sending a lot of data. That also means cheap. Cheap on space and cheap on sending data = very cheap.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;SEO optimization is sort of like a hidden black box. Search engines don’t publicly say all the ways they use to choose site rankings, but they tell us some of them and we get an impression of others. It&#39;s a likely case that sites with security warnings, suffer de-ranks, but it&#39;s unclear how severe those security issues have to be or how long.&lt;/p&gt;
+    &lt;p&gt;SEO optimization is sort of like a hidden black box. Search engines don’t publicly say all the ways they use to choose site rankings, but they tell us some of them and we get an impression of others. It's a likely case that sites with security warnings, suffer de-ranks, but it's unclear how severe those security issues have to be or how long.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 30 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/30/why-use-jekyll-to-create-a-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/30/why-use-jekyll-to-create-a-blog/</guid>
+        <link>http://localhost:4000/2016/05/30/why-use-jekyll-to-create-a-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/30/why-use-jekyll-to-create-a-blog/</guid>
         
         <category>Jekyll</category>
         
@@ -537,7 +591,7 @@ end
 
 &lt;hr /&gt;
 
-&lt;p&gt;When I first started developing I didn&#39;t see the point in a blog. But, when I started learning beyond the basics and troubleshooting through google, or checking out alternative techniques, I often ran into blogs for potential solutions and thought pieces. Most of the time, I wasn&#39;nt receiving an expansive guide, or a lot of code, but they were almost always a great starting point.  A technical blog I often ran into in my early days was joshsoftware.com&lt;/p&gt;
+&lt;p&gt;When I first started developing I didn't see the point in a blog. But, when I started learning beyond the basics and troubleshooting through google, or checking out alternative techniques, I often ran into blogs for potential solutions and thought pieces. Most of the time, I wasn'nt receiving an expansive guide, or a lot of code, but they were almost always a great starting point.  A technical blog I often ran into in my early days was joshsoftware.com&lt;/p&gt;
 
 &lt;p&gt;Even after running into technical blogs I figured these were just folks with years of experience; a blog is for someone in their fifth year programming who wants to give back to the community. Why should I extend the extra effort while I’m still learning? Could I even put out anything decent? There are already posts on polymorphic associates and guides, why would it be helpful if I wrote one?&lt;/p&gt;
 
@@ -556,8 +610,8 @@ end
 &lt;p&gt;Everyone with a technical blog is just like you and me. They took the intiative at some point, and their skills grew with them to the extent that now we can all use their posts and a resource for our own growth.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 May 2016 00:00:00 -0700</pubDate>
-        <link>https://www.mikepotato.com/2016/05/23/why-create-a-jekyll-blog/</link>
-        <guid isPermaLink="true">https://www.mikepotato.com/2016/05/23/why-create-a-jekyll-blog/</guid>
+        <link>http://localhost:4000/2016/05/23/why-create-a-jekyll-blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/23/why-create-a-jekyll-blog/</guid>
         
         <category>Jekyll</category>
         
