@@ -1,5 +1,5 @@
-s3_id: AKIAIR5AEOEF2F76F7FA
-s3_secret: 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
+s3_id: 
+s3_secret: 
 s3_bucket: robosto.com
 
 # these s3 keys are invalid, but i uploaded them months ago with version control.
